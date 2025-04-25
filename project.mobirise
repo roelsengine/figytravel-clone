@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 223,
+    "uniqCompNum": 224,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -4272,6 +4272,21 @@
           "_name": "pro.custom-html",
           "_sourceTheme": "startm5",
           "_anchor": "custom-html-5p",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>A well-known quote, contained in a blockquote element.</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n  </div>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 23px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_anchor": "custom-html-67",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
