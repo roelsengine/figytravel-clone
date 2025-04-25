@@ -1,0 +1,2 @@
+# figytravel-clone
+GitHub Pages
