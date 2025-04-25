@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 224,
+    "uniqCompNum": 225,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -4074,6 +4074,164 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "p": {
+              "line-height": "1.2"
+            },
+            ".embla__slide": {
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "min-width": "770px",
+              "max-width": "570px",
+              "@media (max-width: 768px)": {
+                "min-width": "70%",
+                "max-width": "initial",
+                "margin-left": "1rem !important",
+                "margin-right": "1rem !important"
+              }
+            },
+            ".embla__button--next, .embla__button--prev": {
+              "display": "flex"
+            },
+            ".embla__button": {
+              "top": "50%",
+              "width": "60px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "22px",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "color": "#fff",
+              "border": "2px solid #fff",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "position": "absolute",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "& when not (@arrows)": {
+                "display": "none"
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
+              },
+              "&:disabled": {
+                "cursor": "default",
+                "display": "none"
+              },
+              "&:hover": {
+                "background": "#000",
+                "color": "rgba(255, 255, 255, 0.5)"
+              },
+              "&.embla__button--prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.embla__button--next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 768px)": {
+                "top": "auto"
+              }
+            },
+            ".item-wrapper": {
+              "height": "100%"
+            },
+            ".item-menu-overlay": {
+              "border-radius": "2rem"
+            },
+            ".user_image": {
+              "max-width": "600px",
+              "max-height": "400px",
+              "margin-bottom": "1.6rem",
+              "overflow": "hidden",
+              "margin": "0 auto 2rem auto",
+              "img": {
+                "width": "100%",
+                "max-height": "400px",
+                "object-fit": "cover"
+              }
+            },
+            "@media (max-width: 230px)": {
+              ".user_image": {
+                "width": "100%",
+                "height": "auto"
+              }
+            },
+            ".embla": {
+              "position": "relative",
+              "width": "100%"
+            },
+            ".embla__viewport": {
+              "overflow": "hidden",
+              "width": "100%"
+            },
+            ".embla__viewport.is-draggable": {
+              "cursor": "grab"
+            },
+            ".embla__viewport.is-dragging": {
+              "cursor": "grabbing"
+            },
+            ".embla__container": {
+              "display": "flex",
+              "user-select": "none",
+              "-webkit-touch-callout": "none",
+              "-khtml-user-select": "none",
+              "-webkit-tap-highlight-color": "transparent"
+            },
+            ".user_desk": {
+              "color": "#232323"
+            },
+            ".user_name": {
+              "color": "#232323"
+            },
+            ".user_text, .user_name, .user_desk": {
+              "padding": "0rem 1.5rem"
+            },
+            "@media (max-width: 767px)": {
+              ".user_text, .user_name, .user_desk": {
+                "padding": "0rem 0rem"
+              }
+            }
+          },
+          "_name": "slider02",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider2 mbr-embla\" group=\"Slider\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"embla\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked=\"\">\n\t\t<input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" inline=\"\">\n\t\t<input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" inline=\"\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<header>Carousel</header>\n\t\t<input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n\t\t<input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n\t\t<input type=\"checkbox\" title=\"Loop\" name=\"loop\">\n\t\t<input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked=\"\">\n\t\t<input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked=\"\">\n\t\t<input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\" checked=\"\">\n\t\t<header>Slides</header>\n\t\t<input type=\"range\" name=\"gap\" title=\"Gap\" min=\"1\" max=\"10\" step=\"1\" value=\"10\">\n\t\t<input type=\"checkbox\" title=\"Author Name\" name=\"showName\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Author Title\" name=\"showDesk\" checked=\"\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#edefeb\" selected=\"\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"position-relative text-center\">\n\t\t<h3 class=\"mb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n\t\t\t<b>What Our Fantastic Users Say</b>\n\t\t</h3>\n\n\t\t<div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\">\n\t\t\t<div class=\"embla__viewport\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t\t\t<div class=\"embla__container\">\n\t\t\t\t\t<div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n\t\t\t\t\t\t<div class=\"user\">\n\t\t\t\t\t\t\t<div class=\"user_image\">\n\t\t\t\t\t\t\t\t<div class=\"item-wrapper position-relative\">\n\t\t\t\t\t\t\t\t\t<img src=\"../_images/hightlights/13.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"user_text mb-4\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".user_text\">\n\t\t\t\t\t\t\t\t\t<b>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum\n\t\t\t\t\t\t\t\t\t\tmetus. Integer velit nisl, ultrices id tempor ultrices enim.\"</b>\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n\t\t\t\t\t\t\t\tCatherine Bowling\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n\t\t\t\t\t\t\t\tInfluencer\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n\t\t\t\t\t\t<div class=\"user\">\n\t\t\t\t\t\t\t<div class=\"user_image\">\n\t\t\t\t\t\t\t\t<div class=\"item-wrapper position-relative\">\n\t\t\t\t\t\t\t\t\t<img src=\"../_images/hightlights/11.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"user_text mb-4\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".user_text\">\n\t\t\t\t\t\t\t\t\t<b>\n\t\t\t\t\t\t\t\t\t\t\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum\n\t\t\t\t\t\t\t\t\t\tmetus. Integer velit nisl, ultrices id tempor ultrices enim.\"\n\t\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n\t\t\t\t\t\t\t\tCynthia Diaz\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n\t\t\t\t\t\t\t\tInfluencer\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n\t\t\t\t\t\t<div class=\"user\">\n\t\t\t\t\t\t\t<div class=\"user_image\">\n\t\t\t\t\t\t\t\t<div class=\"item-wrapper position-relative\">\n\t\t\t\t\t\t\t\t\t<img src=\"../_images/hightlights/12.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"user_text mb-4\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".user_text\">\n\t\t\t\t\t\t\t\t\t<b>\n\t\t\t\t\t\t\t\t\t\t\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum\n\t\t\t\t\t\t\t\t\t\tmetus. Integer velit nisl, ultrices id tempor ultrices enim.\"\n\t\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n\t\t\t\t\t\t\t\tSharon Davis\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n\t\t\t\t\t\t\t\tInfluencer\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n\t\t\t\t\t\t<div class=\"user\">\n\t\t\t\t\t\t\t<div class=\"user_image\">\n\t\t\t\t\t\t\t\t<div class=\"item-wrapper position-relative\">\n\t\t\t\t\t\t\t\t\t<img src=\"../_images/hightlights/10.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"user_text mb-4\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".user_text\">\n\t\t\t\t\t\t\t\t\t<b>\n\t\t\t\t\t\t\t\t\t\t\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum\n\t\t\t\t\t\t\t\t\t\tmetus. Integer velit nisl, ultrices id tempor ultrices enim.\"\n\t\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n\t\t\t\t\t\t\t\tJacobson Miller\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n\t\t\t\t\t\t\t\tInfluencer\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n\t\t\t\t\t\t<div class=\"user\">\n\t\t\t\t\t\t\t<div class=\"user_image\">\n\t\t\t\t\t\t\t\t<div class=\"item-wrapper position-relative\">\n\t\t\t\t\t\t\t\t\t<img src=\"../_images/hightlights/8.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"user_text mb-4\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".user_text\">\n\t\t\t\t\t\t\t\t\t<b>\n\t\t\t\t\t\t\t\t\t\t\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum\n\t\t\t\t\t\t\t\t\t\tmetus. Integer velit nisl, ultrices id tempor ultrices enim.\"\n\t\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n\t\t\t\t\t\t\t\tAshley Brown\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-text=\"\" class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n\t\t\t\t\t\t\t\tInfluencer\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<button class=\"embla__button embla__button--prev\">\n\t\t\t\t<span class=\"mobi-mbri mobi-mbri-arrow-prev mbr-iconfont\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Previous</span>\n\t\t\t</button>\n\t\t\t<button class=\"embla__button embla__button--next\">\n\t\t\t\t<span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Next</span>\n\t\t\t</button>\n\t\t</div>\n\t</div>\n</section>\n",
+          "_cid": "uJqbRmoXci",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "slider02-68"
+        },
+        {
+          "alias": false,
+          "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
@@ -4272,21 +4430,6 @@
           "_name": "pro.custom-html",
           "_sourceTheme": "startm5",
           "_anchor": "custom-html-5p",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>A well-known quote, contained in a blockquote element.</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n  </div>\n</div>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 23px;\n  color: #777;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "startm5",
-          "_anchor": "custom-html-67",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
@@ -4592,22 +4735,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div><ul class=\"list-group list-group-light \">\n    <li class=\"list-group-item active\"><h1>Included in price</h1></li>\n  <li class=\"list-group-item\">3 nice meals per day</li>\n  <li class=\"list-group-item\">Accommodation + all MLVF facilities</li>\n  <li class=\"list-group-item\">Transport from and to Mwanza Airport</li>\n  <li class=\"list-group-item\">And a fifth one</li>\n    <li class=\"list-group-item\">Wi-fi</li>\n    <li class=\"list-group-item\">24/7 in-country support</li>\n    <li class=\"list-group-item\">Room cleaning</li>\n    <li class=\"list-group-item\">Laundry service</li>\n    <li class=\"list-group-item\">Bikes</li>\n    <li class=\"list-group-item\">Particular add-ons / activities</li>\n</ul>\n</div>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0 10% 0 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\n\n\n\n\n\n\n\n\n",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "startm5",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_params": {},
-          "_anchor": "custom-html-64"
         },
         {
           "alias": false,
