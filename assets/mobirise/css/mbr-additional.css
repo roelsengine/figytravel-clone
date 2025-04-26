@@ -3107,6 +3107,29 @@ a {
 .cid-uJtyY9JwD5 .mbr-section-btn {
   text-align: center;
 }
+.cid-uJu22zWNwT {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-uJu22zWNwT .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uJu22zWNwT .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uJu22zWNwT .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-uJu22zWNwT .mbr-section-title {
+  text-align: center;
+}
 .cid-uIxn819H3Q {
   padding-top: 1rem;
   padding-bottom: 0rem;
