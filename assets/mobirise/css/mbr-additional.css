@@ -3283,38 +3283,23 @@ a {
 .cid-uIxldRrMfm .mbr-section-btn {
   text-align: center;
 }
-.cid-uIxj3FfY5y {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
+#custom-html-6m {
+  /* Type valid CSS here */
 }
-.cid-uIxj3FfY5y .counter-container ol {
-  margin-bottom: 0;
-  padding-left: 2.25rem;
-  counter-reset: myCounter;
-}
-.cid-uIxj3FfY5y .counter-container ol li {
-  margin-bottom: 2rem;
-  list-style: none;
-  position: relative;
-}
-.cid-uIxj3FfY5y .counter-container ol li:before {
-  font-weight: 700;
-  position: absolute;
-  left: -1.5em;
-  counter-increment: myCounter;
-  content: counter(myCounter);
-  transition: all .2s;
-  color: #9fe870;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cid-uIxj3FfY5y .mbr-section-title {
+#custom-html-6m div {
+  padding: 20px 10% 20px 10%
+  color: #777;
   text-align: center;
 }
-.cid-uIxj3FfY5y .mbr-section-subtitle {
-  text-align: center;
+#custom-html-6m p {
+  font-size: 14px;
+  color: #777;
+}
+#custom-html-6m li {
+  font-size: 18px;
+}
+#custom-html-6m ul {
+  align: center;
 }
 .cid-uIxps6fpkA {
   padding-top: 0rem;

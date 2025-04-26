@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 238,
+    "uniqCompNum": 239,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -3495,7 +3495,7 @@
           },
           "_name": "header14",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header14\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Wrap</header>\n\t\t<input type=\"range\" name=\"cardWidth\" title=\"Wrap Width\" min=\"6\" max=\"12\" value=\"10\" step=\"1\">\n\t\t<input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card col-12 col-md-12 col-lg-{{cardWidth}}\">\n\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<h1 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Why be a teaching volunteer with FIGY Travel Foundation?</b></h1>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tBy volunteering with children in Tanzania, you'll not only make a positive impact on their education, but you'll also benefit personally and professionally by:\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Apply now!</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header14\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Wrap</header>\n\t\t<input type=\"range\" name=\"cardWidth\" title=\"Wrap Width\" min=\"6\" max=\"12\" value=\"10\" step=\"1\">\n\t\t<input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card col-12 col-md-12 col-lg-{{cardWidth}}\">\n\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<h1 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Why be a teaching volunteer with FIGY Travel Foundation?</b></h1>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tBy volunteering with children in Tanzania, you'll not only make a positive impact on their education, but you'll also benefit personally and professionally by:\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Apply now!</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_anchor": "header14-46",
           "_isUserblock": true,
           "_cid": "uIxldRrMfm",
@@ -3505,51 +3505,20 @@
           "_params": {}
         },
         {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".counter-container": {
-              "ol": {
-                "margin-bottom": "0",
-                "padding-left": "2.25rem",
-                "li": {
-                  "margin-bottom": "2rem",
-                  "list-style": "none",
-                  "position": "relative",
-                  "&:before": {
-                    "font-weight": "700",
-                    "position": "absolute",
-                    "left": "-1.5em",
-                    "counter-increment": "myCounter",
-                    "content": "counter(myCounter)",
-                    "transition": "all .2s",
-                    "color": "@iconColor",
-                    "display": "flex",
-                    "align-items": "center",
-                    "justify-content": "center"
-                  }
-                },
-                "counter-reset": "myCounter"
-              }
-            },
-            ".mbr-section-title": {
-              "text-align": "center"
-            },
-            ".mbr-section-subtitle": {
-              "text-align": "center"
-            }
-          },
-          "_name": "article17",
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<section class=\"p-4 justify-content-center w-100\" style=\"padding: 20px 30px 20px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Benefits</strong></h2></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article17\" group=\"Article\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"8\" step=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\">\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n    <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#9fe870\">\n    <header>Background</header>\n    <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n  </mbr-parameters>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n        <div class=\"row mb-5 justify-content-center\" mbr-if=\"showMainTitle || showMainSubtitle\">\n          <div class=\"col-12 content-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n              <b>List</b>\n            </h3>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n              Press \"Enter\" to add more items to the list.</h5>\n          </div>\n        </div>\n        <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n          <ol>\n            <li>Independent teaching and/or assisting the head teachers\n</li><li>Contributing to childhood education in underprivileged areas\n</li><li>Providing children with a safe environment to learn life skills\n</li><li>Gaining hands-on experience in childcare\n</li><li>Become part of FIGY Travel's volunteer family and be part of something bigger.\n</li><li>Personal development and growing\n</li><li>Being immersed in the Tanzanian culture\n</li><li>&nbsp;Exploring Africa's breathtaking wildlife</li>\n          </ol>\n          <ol>\n          </ol>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_cid": "uIxj3FfY5y",
-          "_anchor": "article17-3u",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_params": {},
+          "_anchor": "custom-html-6m"
         },
         {
           "alias": false,
