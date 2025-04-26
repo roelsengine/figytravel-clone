@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 226,
+    "uniqCompNum": 230,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -4390,6 +4390,21 @@
           "_params": {}
         },
         {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n      \n          <div><ul class=\"list-group list-group-light \">\n    <li class=\"list-group-item active\"><h1>Included in price</h1></li>\n  <li class=\"list-group-item\">3 nice meals per day</li>\n  <li class=\"list-group-item\">Accommodation + all MLVF facilities</li>\n  <li class=\"list-group-item\">Transport from and to Mwanza Airport</li>\n  <li class=\"list-group-item\">And a fifth one</li>\n    <li class=\"list-group-item\">Wi-fi</li>\n    <li class=\"list-group-item\">24/7 in-country support</li>\n    <li class=\"list-group-item\">Room cleaning</li>\n    <li class=\"list-group-item\">Laundry service</li>\n    <li class=\"list-group-item\">Bikes</li>\n    <li class=\"list-group-item\">Particular add-ons / activities</li>\n</ul>\n</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-sm-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <div>\n    \n      <ul class=\"list-group list-group-light\" style=\"min-width: 90%;\">\n            <li class=\"list-group-item alert alert-danger\" role=\"alert\"><h3>Excluded in price</h3></li>\n        <li class=\"list-group-item\">Flight ticket</li>\n        <li class=\"list-group-item\">VISA costs</li>\n        <li class=\"list-group-item\">Vaccination(s)</li>\n        <li class=\"list-group-item\">Malaria Medication</li>\n              <li class=\"list-group-item\">Tips or souvenirs</li>\n              <li class=\"list-group-item\">Alcoholic beverages</li>\n              <li class=\"list-group-item\">Personal guides</li>\n              <li class=\"list-group-item\">Add-ons such as Safari/Zanzibar </li>\n              \n      </ul>\n    </div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "_customCSS": "\n",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_anchor": "custom-html-6a",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
           "alias": false,
           "_styles": {
             "& when not (@fullScreen)": {
@@ -4642,22 +4657,6 @@
           "_anchor": "custom-html-5g",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<figure class=\"text-center\">\n  <blockquote class=\"blockquote\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>\n  </blockquote>\n  <figcaption class=\"blockquote-footer\">\n    Someone famous in <cite title=\"Source Title\">Source Title</cite>\n  </figcaption>\n</figure>\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 22px;\n  color: #777;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "startm5",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_params": {},
-          "_anchor": "custom-html-63"
         }
       ]
     },
