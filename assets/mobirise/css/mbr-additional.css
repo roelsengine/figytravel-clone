@@ -3856,6 +3856,7 @@ a {
 }
 .cid-uJnmKpAJne .mbr-section-title {
   text-align: center;
+  color: #00a3fa;
 }
 .cid-uJnyRA3ONG {
   padding-top: 2rem;
@@ -4039,6 +4040,24 @@ a {
 .cid-uIxlSCJBWU .mbr-text,
 .cid-uIxlSCJBWU .mbr-section-btn {
   text-align: center;
+}
+#custom-html-6n {
+  /* Type valid CSS here */
+}
+#custom-html-6n div {
+  padding: 20px 10% 20px 10%
+  color: #777;
+  text-align: center;
+}
+#custom-html-6n p {
+  font-size: 14px;
+  color: #777;
+}
+#custom-html-6n li {
+  font-size: 18px;
+}
+#custom-html-6n ul {
+  align: center;
 }
 .cid-uIxm6FFimO {
   padding-top: 1rem;
