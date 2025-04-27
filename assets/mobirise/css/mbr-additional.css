@@ -3245,7 +3245,7 @@ a {
 }
 .cid-uIxldRrMfm {
   padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
 }
 .cid-uIxldRrMfm .mbr-fallback-image.disabled {
@@ -3381,41 +3381,23 @@ a {
   text-align: center;
   color: #000000;
 }
-.cid-uIxpQhgVQD {
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
+#custom-html-6r {
+  /* Type valid CSS here */
 }
-.cid-uIxpQhgVQD .counter-container ol {
-  margin-bottom: 0;
-  padding-left: 2.25rem;
-  counter-reset: myCounter;
-}
-.cid-uIxpQhgVQD .counter-container ol li {
-  margin-bottom: 2rem;
-  list-style: none;
-  position: relative;
-}
-.cid-uIxpQhgVQD .counter-container ol li:before {
-  font-weight: 700;
-  position: absolute;
-  left: -1.5em;
-  counter-increment: myCounter;
-  content: counter(myCounter);
-  transition: all .2s;
-  color: #9fe870;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cid-uIxpQhgVQD .mbr-section-title {
+#custom-html-6r div {
+  padding: 20px 10% 20px 10%
+  color: #777;
   text-align: center;
 }
-.cid-uIxpQhgVQD .mbr-section-subtitle {
-  text-align: center;
+#custom-html-6r p {
+  font-size: 14px;
+  color: #777;
 }
-.cid-uIxpQhgVQD .mbr-text {
-  text-align: left;
+#custom-html-6r li {
+  font-size: 18px;
+}
+#custom-html-6r ul {
+  align: center;
 }
 .cid-uJnNDHO7Xb {
   padding-top: 2rem;
@@ -3787,7 +3769,7 @@ a {
   align: center;
 }
 .cid-uJnYH9Hbcl {
-  padding-top: 0rem;
+  padding-top: 3rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
