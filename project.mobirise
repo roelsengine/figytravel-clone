@@ -3280,57 +3280,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "color": "#000000"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#000000"
-            },
-            ".mbr-section-title": {
-              "color": "#000000"
-            },
-            ".img-wrapper img": {
-              "width": "120px",
-              "height": "120px",
-              "object-fit": "cover",
-              "border-radius": "50% !important",
-              "@media (min-width: 768px) and (max-width: 991px)": {
-                "width": "120px",
-                "height": "120px"
-              },
-              "@media (max-width: 768px)": {
-                "width": "80px",
-                "height": "80px"
-              }
-            },
-            ".img-wrapper": {
-              "display": "flex"
-            },
-            ".card-text": {
-              "text-align": "center"
-            },
-            ".card-title, .img-wrapper": {
-              "text-align": "center"
-            }
-          },
-          "_name": "people07",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to preventing poverty, securing long-term employment and improving quality of life.\n                </p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.jpg-240x320.jpg\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"><b>Contributes to United Nations’ Sustainable Development Goal #4: Quality Education</b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "uJAbU28J9r",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "people07-6w",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
-        },
-        {
-          "alias": false,
-          "_styles": {
             "--fa-font-brands": "normal 400 (1em / 1) \"Font Awesome 6 Brands\"",
             "--fa-font-regular": "normal 400 (1em / 1) \"Font Awesome 6 Free\"",
             "--fa-font-solid": "normal 900 (1em / 1) \"Font Awesome 6 Free\"",
@@ -3489,7 +3438,7 @@
             "font-size": "var(--mdb-body-font-size)",
             "font-weight": "var(--mdb-body-font-weight)",
             "line-height": "var(--mdb-body-line-height)",
-            "text-align": "var(--mdb-body-text-align)",
+            "text-align": "center",
             "-webkit-text-size-adjust": "100%",
             "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
             "--mdb-gutter-x": "1.5rem",
@@ -3509,9 +3458,60 @@
           },
           "_name": "article11",
           "_sourceTheme": "startm5",
-          "_customHTML": "<p class=\"note note-light\">\n      <strong>Note:</strong> Read the <strong>API</strong> tab to find all available options and\n      advanced customization\n    </p>",
+          "_customHTML": "<p class=\"note note-light center\">\n      <strong>Note:</strong> Read the <strong>API</strong> tab to find all available options and\n      advanced customization\n    </p>",
           "_cid": "uJAeO3SSTQ",
           "_anchor": "article11-6x",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".img-wrapper img": {
+              "width": "120px",
+              "height": "120px",
+              "object-fit": "cover",
+              "border-radius": "50% !important",
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "width": "120px",
+                "height": "120px"
+              },
+              "@media (max-width: 768px)": {
+                "width": "80px",
+                "height": "80px"
+              }
+            },
+            ".img-wrapper": {
+              "display": "flex"
+            },
+            ".card-text": {
+              "text-align": "center"
+            },
+            ".card-title, .img-wrapper": {
+              "text-align": "center"
+            }
+          },
+          "_name": "people07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to preventing poverty, securing long-term employment and improving quality of life.\n                </p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.jpg-240x320.jpg\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"><b>Contributes to United Nations’ Sustainable Development Goal #4: Quality Education</b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uJAbU28J9r",
+          "_anchor": "people07-6w",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_protectedParams": [],
@@ -3560,12 +3560,12 @@
           "_anchor": "article11-6k",
           "_isUserblock": true,
           "_cid": "uJu22zWNwT",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
+          "_params": {}
         },
         {
           "_customTemplate": true,
