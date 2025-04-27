@@ -3455,7 +3455,7 @@
             "padding": "20px ",
             "border-left": "var(--mdb-note-border-width) solid",
             "border-radius": "var(--mdb-note-border-radius)",
-            "background-color": "#FF0080",
+            "background-color": "#FF1493",
             "color": "#eee"
           },
           "_name": "article11",
@@ -3515,7 +3515,7 @@
               "font-style": "normal"
             },
             "font-weight": "600",
-            "line-height": "2.5",
+            "line-height": "3.5",
             "color": "#212529",
             "box-sizing": "border-box",
             "margin": "10px",
@@ -3675,7 +3675,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Benefits</strong></h2></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: -20px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"

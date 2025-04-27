@@ -3281,7 +3281,7 @@ a {
   padding: 20px ;
   border-left: var(--mdb-note-border-width) solid;
   border-radius: var(--mdb-note-border-radius);
-  background-color: #FF0080;
+  background-color: #FF1493;
   color: #eee;
 }
 .cid-uJAbU28J9r {
@@ -3289,7 +3289,7 @@ a {
   padding-bottom: 0rem;
   background-color: #ffffff;
   font-weight: 600;
-  line-height: 2.5;
+  line-height: 3.5;
   color: #212529;
   box-sizing: border-box;
   margin: 10px;
@@ -3441,7 +3441,7 @@ a {
   /* Type valid CSS here */
 }
 #custom-html-6m div {
-  padding: 0px 10% 0px 10%;
+  padding: -20px 10% 0px 10%;
   color: #777;
   text-align: center;
 }
