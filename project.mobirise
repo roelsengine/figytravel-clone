@@ -3471,22 +3471,6 @@
           "_params": {}
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<blockquote class=\"blockquote text-center lora\">\n    <p class=\"\">Contributes to United Nations’ <strong>Sustainable Development</strong> Goal 4: Quality Education</p>\n  <footer class=\"blockquote-footer\"> <cite>United Nations&gt;</cite></footer>\n</blockquote>",
-          "_customCSS": ".lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}\n\n    font-weight: 600;\n    line-height: 2.5;\n    color: #212529;\n    box-sizing: border-box;\n    margin: 10px;\n    margin-bottom: 1rem;\n    font-size: 1.25rem;\n    text-align: center!important;",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "startm5",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_params": {},
-          "_anchor": "custom-html-6y"
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -3541,7 +3525,7 @@
           },
           "_name": "people07",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\" font-family=\"lora\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to preventing poverty, securing long-term employment and improving quality of life.\n                </p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.jpg-240x320.jpg\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\" font-family=\"lora\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to preventing poverty, securing long-term employment and improving quality of life.\n                </p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.jpg-240x320.jpg\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uJAbU28J9r",
           "_anchor": "people07-6w",
           "_PHPplaceholders": [],
@@ -3550,6 +3534,22 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<blockquote class=\"blockquote text-center lora\">\n    <p class=\"\">Contributes to United Nations’ <strong>Sustainable Development</strong> Goal 4: Quality Education</p>\n  <footer class=\"blockquote-footer\"> <cite>United Nations&gt;</cite></footer>\n</blockquote>",
+          "_customCSS": ".lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}\n\n    font-weight: 600;\n    line-height: 2.5;\n    color: #212529;\n    box-sizing: border-box;\n    margin: 10px;\n    margin-bottom: 1rem;\n    font-size: 1.25rem;\n    text-align: center!important;",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_params": {},
+          "_anchor": "custom-html-6y"
         },
         {
           "alias": false,
