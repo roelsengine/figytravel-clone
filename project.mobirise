@@ -3473,7 +3473,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote lora\">\n      <p>A well-known quote, contained in a blockquote element.</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n  </div>\n</div>",
+          "_customHTML": "\n    <blockquote class=\"blockquote lora\">\n      <p>A well-known quote, contained in a blockquote element.</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n",
           "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}",
           "alias": "code-editor",
           "_tags": [
