@@ -3447,6 +3447,14 @@ a {
   text-align: center;
   color: #000000;
 }
+#custom-html-6s {
+  /* Type valid CSS here */
+}
+#custom-html-6s div {
+  padding: 10px;
+  heigth: 25px;
+  align: center;
+}
 .cid-uJnzUhEO8F {
   padding-top: 2rem;
   padding-bottom: 2rem;
