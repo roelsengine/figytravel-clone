@@ -763,7 +763,7 @@ a {
   width: 0;
   position: absolute;
   left: 1rem;
-  top: 0.5rem;
+  top: 0rem;
   margin-right: 0.5rem;
   line-height: 1;
   font-size: inherit;
@@ -880,7 +880,7 @@ a {
 .cid-uGUkbNK72V .container {
   display: flex;
   height: 90px;
-  padding: 0.5rem 0.6rem;
+  padding: 0rem 0rem;
   flex-wrap: nowrap;
   background: rgba(255, 255, 255, 0.8) !important;
   left: 0;
@@ -892,8 +892,8 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 100vw;
-  margin-top: 1rem;
+  border-radius: 0vw;
+  margin-top: 0rem;
   background-color: #ffffff;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
@@ -2494,7 +2494,7 @@ a {
   width: 0;
   position: absolute;
   left: 1rem;
-  top: 0.5rem;
+  top: 0rem;
   margin-right: 0.5rem;
   line-height: 1;
   font-size: inherit;
@@ -2611,7 +2611,7 @@ a {
 .cid-uIxj3BlHjN .container {
   display: flex;
   height: 90px;
-  padding: 0.5rem 0.6rem;
+  padding: 0rem 0rem;
   flex-wrap: nowrap;
   background: rgba(255, 255, 255, 0.8) !important;
   left: 0;
@@ -2623,8 +2623,8 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 100vw;
-  margin-top: 1rem;
+  border-radius: 0vw;
+  margin-top: 0rem;
   background-color: #ffffff;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
@@ -4252,7 +4252,7 @@ a {
   width: 0;
   position: absolute;
   left: 1rem;
-  top: 0.5rem;
+  top: 0rem;
   margin-right: 0.5rem;
   line-height: 1;
   font-size: inherit;
@@ -4369,7 +4369,7 @@ a {
 .cid-uIxv1fMkZv .container {
   display: flex;
   height: 90px;
-  padding: 0.5rem 0.6rem;
+  padding: 0rem 0rem;
   flex-wrap: nowrap;
   background: rgba(255, 255, 255, 0.8) !important;
   left: 0;
@@ -4381,8 +4381,8 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 100vw;
-  margin-top: 1rem;
+  border-radius: 0vw;
+  margin-top: 0rem;
   background-color: #ffffff;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
