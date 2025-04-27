@@ -3455,8 +3455,8 @@
             "padding": "20px ",
             "border-left": "var(--mdb-note-border-width) solid",
             "border-radius": "var(--mdb-note-border-radius)",
-            "background-color": "var(--mdb-light-bg-subtle)",
-            "color": "var(--mdb-light-text-emphasis)"
+            "background-color": "#FF0080",
+            "color": "#eee"
           },
           "_name": "article11",
           "_sourceTheme": "startm5",
