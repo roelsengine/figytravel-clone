@@ -3326,8 +3326,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<section class=\"p-4 justify-content-center w-100\" style=\"padding: 20px 30px 20px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Program Summary</strong></h2></li>\n        <li class=\"list-group-item \">6 week program (editable in consultation)</li>\n        <li class=\"list-group-item\">Affordable fees from € 343 per week</li>\n        <li class=\"list-group-item\">Includes accommodation, meals, airport pickup, listed activities, 24/7 support and more.</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Stay in our beautiful lodges at Mwanza Lake view Farm, set on the shores of Lake Victoria.</li>\n              <li class=\"list-group-item\">Amazing add-ons available, including Safari, Mount Kilimanjaro and Maasai village tours and the option to unwind and bring your volunteer journey to a close with a visit to the beautiful island of Zanzibar.</li>\n              <li class=\"list-group-item\">Minimum Age must be 18+</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 20% 0px 20%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Program Summary</strong></h2></li>\n        <li class=\"list-group-item \">6 week program (editable in consultation)</li>\n        <li class=\"list-group-item\">Affordable fees from € 343 per week</li>\n        <li class=\"list-group-item\">Includes accommodation, meals, airport pickup, listed activities, 24/7 support and more.</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Stay in our beautiful lodges at Mwanza Lake view Farm, set on the shores of Lake Victoria.</li>\n              <li class=\"list-group-item\">Amazing add-ons available, including Safari, Mount Kilimanjaro and Maasai village tours and the option to unwind and bring your volunteer journey to a close with a visit to the beautiful island of Zanzibar.</li>\n              <li class=\"list-group-item\">Minimum Age must be 18+</li>\n\n      </ul>\n    </section>\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3507,8 +3507,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<section class=\"p-4 justify-content-center w-100\" style=\"padding: 20px 30px 20px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Benefits</strong></h2></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 20% 0px 20%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Benefits</strong></h2></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3625,8 +3625,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<section class=\"p-4 justify-content-center w-100\" style=\"padding: 20px 30px 20px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Job specification</strong></h2></li>\n        <li class=\"list-group-item \">Assisting in teaching</li>\n        <li class=\"list-group-item\">Caring for children</li>\n        <li class=\"list-group-item\">Organizing games and activities</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Engaging with children</li>\n              <li class=\"list-group-item\">Performing other duties as needed</li>\n            \n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customHTML": "<section class=\" justify-content-center w-100\" style=\"padding: 0px 20% 0px 20%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h2><strong>Job specification</strong></h2></li>\n        <li class=\"list-group-item \">Assisting in teaching</li>\n        <li class=\"list-group-item\">Caring for children</li>\n        <li class=\"list-group-item\">Organizing games and activities</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Engaging with children</li>\n              <li class=\"list-group-item\">Performing other duties as needed</li>\n            \n\n      </ul>\n    </section>\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 20px 10% 20px 10%\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3761,10 +3761,10 @@
               }
             },
             ".mbr-section-subtitle": {
-              "text-align": "left"
+              "text-align": "center"
             },
             ".mbr-section-title": {
-              "text-align": "left",
+              "text-align": "center",
               "color": "#000000"
             }
           },
