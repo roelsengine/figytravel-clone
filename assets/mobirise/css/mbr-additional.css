@@ -3286,6 +3286,12 @@ a {
   background-color: #FF1493;
   color: #eee;
 }
+#custom-html-79 .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .cid-uJAbU28J9r {
   padding-top: 2rem;
   padding-bottom: 0rem;
@@ -3337,12 +3343,6 @@ a {
   text-align: center;
 }
 .cid-uJAbU28J9r .lora {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-#custom-html-79 .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 400;
