@@ -4622,6 +4622,12 @@ a {
 .cid-uJFPXuFt5j .embla__viewport.is-dragging {
   cursor: grabbing;
 }
+.cid-uJFPXuFt5j .embla__slide a {
+  cursor: grab;
+}
+.cid-uJFPXuFt5j .embla__slide a:active {
+  cursor: grabbing;
+}
 .cid-uJFPXuFt5j .embla__container {
   display: flex;
   user-select: none;
