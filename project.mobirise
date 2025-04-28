@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 261,
+    "uniqCompNum": 262,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -3538,8 +3538,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<blockquote class=\"blockquote text-center lora\" style=\"line-heigth=2.5\">\n    <p class=\"\">Contributes to United Nations’ <strong>Sustainable Development</strong> Goal 4: Quality Education</p>\n  <footer class=\"blockquote-footer\"> <cite>United Nations</cite></footer>\n</blockquote>",
-          "_customCSS": ".lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}\n\n    font-weight: 600;\n    line-height: 2.5;\n    color: #212529;\n    box-sizing: border-box;\n    margin: 0px;\n    margin-bottom: 0rem;\n    font-size: 1.25rem;\n    text-align: center!important;",
+          "_customHTML": "\n    <blockquote class=\"blockquote lora text-center\">\n      <p>\"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.\"</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n",
+          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3549,7 +3549,7 @@
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_params": {},
-          "_anchor": "custom-html-6y"
+          "_anchor": "custom-html-79"
         },
         {
           "alias": false,
