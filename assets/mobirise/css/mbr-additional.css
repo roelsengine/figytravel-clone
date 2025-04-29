@@ -877,7 +877,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -889,7 +889,7 @@ a {
   align-items: center;
   border-radius: 0vw;
   margin-top: 0rem;
-  background-color: #ffffff;
+  background-color: #000000;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
 }
@@ -907,7 +907,7 @@ a {
   }
 }
 .cid-uGUkbNK72V .iconfont-wrapper {
-  color: #000000 !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -919,8 +919,8 @@ a {
   border-radius: 1.5rem;
   transition: .3s all !important;
   min-width: auto;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -985,7 +985,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-uGUkbNK72V .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 2.5rem);
+    max-height: calc(98.5vh - 2rem);
   }
 }
 .cid-uGUkbNK72V .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -1083,7 +1083,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-uGUkbNK72V .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #000000;
 }
 .cid-uGUkbNK72V .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1121,7 +1121,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #00a3fa;
 }
 .cid-uGUkbNK72V button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1247,10 +1247,10 @@ a {
     width: 100%;
     padding: 1rem;
     border-radius: 1.5rem;
-    background: #ffffff;
+    background: #000000;
     opacity: 1;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    background: rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -2608,7 +2608,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -2620,7 +2620,7 @@ a {
   align-items: center;
   border-radius: 0vw;
   margin-top: 0rem;
-  background-color: #ffffff;
+  background-color: #000000;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
 }
@@ -2638,7 +2638,7 @@ a {
   }
 }
 .cid-uIxj3BlHjN .iconfont-wrapper {
-  color: #000000 !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -2650,8 +2650,8 @@ a {
   border-radius: 1.5rem;
   transition: .3s all !important;
   min-width: auto;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 4px !important;
 }
 .cid-uIxj3BlHjN .nav-item:focus,
@@ -2716,7 +2716,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-uIxj3BlHjN .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 2.5rem);
+    max-height: calc(98.5vh - 2rem);
   }
 }
 .cid-uIxj3BlHjN .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -2814,7 +2814,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-uIxj3BlHjN .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #000000;
 }
 .cid-uIxj3BlHjN .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -2852,7 +2852,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #00a3fa;
 }
 .cid-uIxj3BlHjN button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -2978,10 +2978,10 @@ a {
     width: 100%;
     padding: 1rem;
     border-radius: 1.5rem;
-    background: #ffffff;
+    background: #000000;
     opacity: 1;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    background: rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -5090,7 +5090,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -5102,7 +5102,7 @@ a {
   align-items: center;
   border-radius: 0vw;
   margin-top: 0rem;
-  background-color: #ffffff;
+  background-color: #000000;
   box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
   border-radius: 4px !important;
 }
@@ -5120,7 +5120,7 @@ a {
   }
 }
 .cid-uIxv1fMkZv .iconfont-wrapper {
-  color: #000000 !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -5132,8 +5132,8 @@ a {
   border-radius: 1.5rem;
   transition: .3s all !important;
   min-width: auto;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 4px !important;
 }
 .cid-uIxv1fMkZv .nav-item:focus,
@@ -5198,7 +5198,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-uIxv1fMkZv .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 2.5rem);
+    max-height: calc(98.5vh - 2rem);
   }
 }
 .cid-uIxv1fMkZv .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -5296,7 +5296,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-uIxv1fMkZv .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #000000;
 }
 .cid-uIxv1fMkZv .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -5334,7 +5334,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #00a3fa;
 }
 .cid-uIxv1fMkZv button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -5460,10 +5460,10 @@ a {
     width: 100%;
     padding: 1rem;
     border-radius: 1.5rem;
-    background: #ffffff;
+    background: #000000;
     opacity: 1;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    background: rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
