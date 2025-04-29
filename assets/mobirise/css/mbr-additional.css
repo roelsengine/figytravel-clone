@@ -45,11 +45,11 @@ body {
 }
 .display-5 {
   font-family: 'Inter Tight', sans-serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 .display-5 > .mbr-iconfont {
-  font-size: 3.75rem;
+  font-size: 2.75rem;
 }
 .display-7 {
   font-family: 'Inter Tight', sans-serif;
@@ -86,9 +86,9 @@ body {
     line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
-    font-size: 2.4rem;
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.76rem;
+    font-size: calc( 1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-7 {
     font-size: 1.12rem;
@@ -113,9 +113,9 @@ body {
     line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 62rem) / (87 - 62))));
   }
   .display-5 {
-    font-size: 2.4rem;
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 62rem) / (87 - 62)));
-    line-height: calc( 1.4 * (1.7rem + (3 - 1.7) * ((100vw - 62rem) / (87 - 62))));
+    font-size: 1.76rem;
+    font-size: calc( 1.42rem + (2.2 - 1.42) * ((100vw - 62rem) / (87 - 62)));
+    line-height: calc( 1.4 * (1.42rem + (2.2 - 1.42) * ((100vw - 62rem) / (87 - 62))));
   }
   .display-7 {
     font-size: 1.12rem;
@@ -3390,7 +3390,7 @@ a {
   color: #777;
 }
 #custom-html-6l li {
-  font-size: 16px;
+  font-size: 18px;
 }
 #custom-html-6l ul {
   align: center;
@@ -3434,52 +3434,6 @@ a {
 .cid-uIxldRrMfm .mbr-text,
 .cid-uIxldRrMfm .mbr-section-btn {
   text-align: center;
-}
-.cid-uJFLDqOUNW {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-uJFLDqOUNW [class^='socicon-']:before,
-.cid-uJFLDqOUNW [class*=' socicon-']:before {
-  line-height: 44px;
-}
-.cid-uJFLDqOUNW .social-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.cid-uJFLDqOUNW .row {
-  justify-content: center;
-}
-.cid-uJFLDqOUNW .soc-item {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.6rem;
-  margin-bottom: 1rem;
-}
-.cid-uJFLDqOUNW .soc-item span {
-  font-size: 1rem;
-  color: #a6a99c !important;
-  transition: all 0.3s;
-}
-.cid-uJFLDqOUNW .soc-item:hover span {
-  color: #ffffff !important;
-}
-.cid-uJFLDqOUNW .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uJFLDqOUNW .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
 }
 #custom-html-6m {
   /* Type valid CSS here */
@@ -4833,8 +4787,8 @@ a {
 .cid-uIxlSCJBWU .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 100;
+  font-size: 18px;
   font-style: italic;
   line-height: -1;
 }
