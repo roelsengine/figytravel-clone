@@ -3109,6 +3109,12 @@ a {
 .cid-uJtyY9JwD5 .mbr-section-btn {
   text-align: center;
 }
+.cid-uJtyY9JwD5 .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .cid-uJAeO3SSTQ {
   --fa-font-brands: normal 400 1em "Font Awesome 6 Brands";
   --fa-font-regular: normal 400 1em "Font Awesome 6 Free";
@@ -4571,6 +4577,11 @@ a {
   position: absolute;
   top: 0;
 }
+@media (min-width: 768px) {
+  .cid-uJFPXuFt5j .container-fluid {
+    padding: 0;
+  }
+}
 .cid-uJFPXuFt5j .embla__slide {
   display: flex;
   justify-content: center;
@@ -4823,6 +4834,15 @@ a {
 .cid-uIxlSCJBWU .mbr-text,
 .cid-uIxlSCJBWU .mbr-section-btn {
   text-align: center;
+  color: #000000;
+}
+.cid-uIxlSCJBWU .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 2;
 }
 #custom-html-6n {
   /* Type valid CSS here */
