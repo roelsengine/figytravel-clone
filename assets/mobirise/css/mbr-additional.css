@@ -3436,8 +3436,8 @@ a {
   text-align: center;
 }
 .cid-uJFLDqOUNW {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .cid-uJFLDqOUNW [class^='socicon-']:before,
@@ -3463,7 +3463,7 @@ a {
 }
 .cid-uJFLDqOUNW .soc-item span {
   font-size: 1rem;
-  color: #3d626c !important;
+  color: #a6a99c !important;
   transition: all 0.3s;
 }
 .cid-uJFLDqOUNW .soc-item:hover span {
@@ -3521,12 +3521,6 @@ a {
 }
 .cid-uJAD2OEFmd .mbr-section-title {
   text-align: center;
-}
-#custom-html-70 .lora {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 #custom-html-6r {
   /* Type valid CSS here */
@@ -3863,6 +3857,24 @@ a {
   text-align: center;
   color: #000000;
 }
+#custom-html-6o {
+  /* Type valid CSS here */
+}
+#custom-html-6o div {
+  padding: 0px 10% 0px 10%;
+  color: #777;
+  text-align: center;
+}
+#custom-html-6o p {
+  font-size: 14px;
+  color: #777;
+}
+#custom-html-6o li {
+  font-size: 18px;
+}
+#custom-html-6o ul {
+  align: center;
+}
 .cid-uJFKYTPfGI {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -4118,24 +4130,6 @@ a {
 }
 .cid-uJFKYTPfGI .content-head {
   max-width: 800px;
-}
-#custom-html-6o {
-  /* Type valid CSS here */
-}
-#custom-html-6o div {
-  padding: 0px 10% 0px 10%;
-  color: #777;
-  text-align: center;
-}
-#custom-html-6o p {
-  font-size: 14px;
-  color: #777;
-}
-#custom-html-6o li {
-  font-size: 18px;
-}
-#custom-html-6o ul {
-  align: center;
 }
 .cid-uJnYH9Hbcl {
   padding-top: 3rem;
