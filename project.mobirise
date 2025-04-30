@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "figy.travel-clone",
-    "currentPage": "index.html",
+    "currentPage": "page3.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -3290,24 +3290,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<figure class=\"text-center\">\n  <blockquote class=\"blockquote\">\n    <p class=\"lora\">\"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.\"</p>\n  </blockquote>\n  <figcaption class=\"blockquote-footer\">\n    Someone famous in <cite title=\"Source Title\">Source Title</cite>\n  </figcaption>\n</figure>\n",
-          "_customCSS": ".lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 100;\n  font-style: italic;\n}\n\n    font-weight: 600;\n    line-height: 1;\n    color: #212529;\n    box-sizing: border-box;\n    margin: 0px;\n    margin-bottom: 0rem;\n    font-size: 1.25rem;\n    text-align: center!important;",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "startm5",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_params": {},
-          "_anchor": "custom-html-7p"
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
           "_customHTML": "\n    <blockquote class=\"blockquote lora text-center\">\n      <p>\"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.\"</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n",
-          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 400;\n  font-style: normal;\n}",
+          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#000;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
