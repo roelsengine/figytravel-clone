@@ -3634,7 +3634,7 @@ a {
   --mdb-note-border-width: 6px;
   --mdb-note-border-radius: 5px;
   --mdb-note-strong-font-weight: 600;
-  padding: 20px ;
+  padding: 50px ;
   border-left: var(--mdb-note-border-width) solid;
   border-radius: var(--mdb-note-border-radius);
   background-color: var(--mdb-light-bg-subtle);
