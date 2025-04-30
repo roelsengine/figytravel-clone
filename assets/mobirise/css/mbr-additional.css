@@ -3323,8 +3323,8 @@ a {
   text-align: center;
 }
 .cid-uJReChBq4t {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-uJReChBq4t .mbr-fallback-image.disabled {
@@ -3388,7 +3388,8 @@ a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-size: 24px;
+  font-size: 25px;
+  text-align: center;
 }
 #custom-html-6m {
   /* Type valid CSS here */
