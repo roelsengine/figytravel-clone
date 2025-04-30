@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 293,
+    "uniqCompNum": 295,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -3710,7 +3710,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Benefits</h3></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
+          "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Benefits for volunteers</h3></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
           "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: -20px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
@@ -3784,6 +3784,22 @@
           "_PHPplaceholders": [],
           "_params": {},
           "_anchor": "custom-html-6r"
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0 lora\">\n      <p>The locals in the country also really stole my heart with the incredible hospitality and ease in which the people live with each other. .</p>\n      <footer class=\"blockquote-footer\">a volunteer <cite title=\"Source Title\"></cite></footer>\n    </blockquote>\n  </div>\n</div>",
+          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#000;\n    line-height:2;\n}\n\ndiv{\n    background-color:#fff;\n    padding: 0 10% 0 10%;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_params": {},
+          "_anchor": "custom-html-86"
         },
         {
           "alias": false,

@@ -3427,6 +3427,18 @@ a {
 #custom-html-6r ul {
   align: center;
 }
+#custom-html-86 .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+  color: #000;
+  line-height: 2;
+}
+#custom-html-86 div {
+  background-color: #fff;
+  padding: 0 10% 0 10%;
+}
 .cid-uJnNDHO7Xb {
   padding-top: 2rem;
   padding-bottom: 2rem;
