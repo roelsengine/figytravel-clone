@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 287,
+    "uniqCompNum": 289,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -3727,6 +3727,77 @@
           "_params": {}
         },
         {
+          "_name": "people1",
+          "_sourceTheme": "tutorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tutorm5 people1\" group=\"People\">\r\n  <mbr-parameters>\r\n    <header>Size</header>\r\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\r\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\r\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\r\n    <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"8\" step=\"1\">\r\n    <header>Show/Hide</header>\r\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\r\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\r\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\r\n    <select title=\"Image Align\" name=\"contentAlign\">\r\n      <option value=\"justify-content-start\">Left</option>\r\n      <option value=\"justify-content-center\" selected>Center</option>\r\n      <option value=\"justify-content-end\">Right</option>\r\n    </select>\r\n    <input type=\"checkbox\" title=\"Name\" name=\"showTitle\" checked>\r\n    <header>Background</header>\r\n    <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\r\n  </mbr-parameters>\r\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\r\n    <div class=\"row justify-content-center\">\r\n      <div class=\"col-md-12 col-lg-12\">\r\n        <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-2\" mbr-if=\"showSubtitle\"\r\n          data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">Course Author</h4>\r\n        <h3 class=\"mbr-section-title mbr-fonts-style mb-5 mt-0\" mbr-if=\"showTitle\"\r\n          data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">Frances J. House</h3>\r\n      </div>\r\n      <div class=\"col-md-12 card col-lg-{{textWidth}}\">\r\n\r\n        <div class=\"wrapper\">\r\n          <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-text\">\r\n            Overall, training is a continuous journey of self-improvement and skill enhancement. It empowers individuals\r\n            to reach their full potential and achieve success in their chosen fields. Whether you're a student, athlete,\r\n            or professional, embracing the training process can lead to personal growth and excellence.</p>\r\n          <span class=\"mbr-iconfont icon1 mobi-mbri-quote-left mobi-mbri\"></span>\r\n          <span class=\"mbr-iconfont icon2 mobi-mbri-quote-right mobi-mbri\"></span>\r\n        </div>\r\n        <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\r\n          <img src=\"@PROJECT_PATH@/assets/images/team1.webp\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\" data-bs-slide-to=\"0\">\r\n        </div>\r\n        <p class=\"card-title mbr-fonts-style mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"\r\n          data-app-selector=\".card-title, .img-wrapper\">Frances J. House<br>Course Author<br></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".img-wrapper img": {
+              "width": "180px",
+              "height": "180px",
+              "object-fit": "cover",
+              "border-radius": "4rem !important",
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "width": "120px",
+                "height": "120px"
+              }
+            },
+            "p": {
+              "line-height": "1.3"
+            },
+            ".mbr-iconfont": {
+              "font-size": "5rem",
+              "color": "@primaryColor",
+              "opacity": "0.2",
+              "@media (max-width: 992px)": {
+                "display": "none"
+              }
+            },
+            ".wrapper": {
+              "position": "relative",
+              ".icon1": {
+                "position": "absolute",
+                "left": "-100px",
+                "top": "-60px"
+              },
+              ".icon2": {
+                "position": "absolute",
+                "right": "-100px",
+                "bottom": "-30px"
+              }
+            },
+            ".img-wrapper": {
+              "display": "flex"
+            },
+            ".card-text": {
+              "text-align": "center"
+            },
+            ".card-title, .img-wrapper": {
+              "text-align": "center",
+              "color": "#f0466a"
+            }
+          },
+          "_cid": "uJRpKRnZEM",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "people1-80"
+        },
+        {
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Benefits</h3></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
@@ -4288,74 +4359,6 @@
           "_PHPplaceholders": [],
           "_params": {},
           "_anchor": "custom-html-6o"
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".card-wrapper": {
-              "border-radius": "4px",
-              "@media (max-width: 767px)": {
-                "padding": "1.5rem"
-              },
-              "@media (min-width: 768px) and (max-width: 991px)": {
-                "padding": "2.25rem"
-              },
-              "@media (min-width: 992px)": {
-                "padding": "4rem"
-              }
-            },
-            ".wrap": {
-              "background": "url(@wrapBgImage)",
-              "background-repeat": "no-repeat",
-              "background-position": "center",
-              "background-size": "cover",
-              ".inner-wrap": {
-                "padding": "40px"
-              }
-            },
-            ".card-title": {
-              "color": "#ffffff",
-              "text-align": "left"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#ffffff",
-              "text-align": "left"
-            }
-          },
-          "_name": "header15",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header15\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Width\" name=\"cardWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\n\t\t<header>Card Background</header>\n\t\t<input type=\"image\" name=\"wrapBgImage\" title=\"Image\" value=\"../_images/background1.jpg\">\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card col-12 col-lg-{{cardWidth}}\">\n\t\t\t\t<div class=\"card-wrapper wrap\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<h1 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t<b>Join our community</b>\n\t\t\t\t\t\t</h1>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tClick any text to edit or style it. Select text to insert a link. Click blue \"Gear\" icon in\n\t\t\t\t\t\t\tthe top right corner to hide/show buttons, text, title and change the block background.\n\t\t\t\t\t\t\tClick red \"+\" in the bottom right corner to add a new block. Use the top left menu to create\n\t\t\t\t\t\t\tnew pages, sites and add themes.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t<a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "uJRbmjjVKh",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "header15-7t"
         },
         {
           "alias": false,

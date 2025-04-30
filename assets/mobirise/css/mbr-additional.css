@@ -3391,6 +3391,71 @@ a {
   font-size: 25px;
   text-align: center;
 }
+.cid-uJRpKRnZEM {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-uJRpKRnZEM .mbr-text {
+  color: #000000;
+}
+.cid-uJRpKRnZEM .mbr-section-subtitle {
+  color: #000000;
+  text-align: center;
+}
+.cid-uJRpKRnZEM .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-uJRpKRnZEM .img-wrapper img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4rem !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uJRpKRnZEM .img-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.cid-uJRpKRnZEM p {
+  line-height: 1.3;
+}
+.cid-uJRpKRnZEM .mbr-iconfont {
+  font-size: 5rem;
+  color: #ffffff;
+  opacity: 0.2;
+}
+@media (max-width: 992px) {
+  .cid-uJRpKRnZEM .mbr-iconfont {
+    display: none;
+  }
+}
+.cid-uJRpKRnZEM .wrapper {
+  position: relative;
+}
+.cid-uJRpKRnZEM .wrapper .icon1 {
+  position: absolute;
+  left: -100px;
+  top: -60px;
+}
+.cid-uJRpKRnZEM .wrapper .icon2 {
+  position: absolute;
+  right: -100px;
+  bottom: -30px;
+}
+.cid-uJRpKRnZEM .img-wrapper {
+  display: flex;
+}
+.cid-uJRpKRnZEM .card-text {
+  text-align: center;
+}
+.cid-uJRpKRnZEM .card-title,
+.cid-uJRpKRnZEM .img-wrapper {
+  text-align: center;
+  color: #f0466a;
+}
 #custom-html-6m {
   /* Type valid CSS here */
 }
@@ -3776,59 +3841,6 @@ a {
 }
 #custom-html-6o ul {
   align: center;
-}
-.cid-uJRbmjjVKh {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-uJRbmjjVKh .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uJRbmjjVKh .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uJRbmjjVKh .card-wrapper {
-  border-radius: 4px;
-}
-@media (max-width: 767px) {
-  .cid-uJRbmjjVKh .card-wrapper {
-    padding: 1.5rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-uJRbmjjVKh .card-wrapper {
-    padding: 2.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-uJRbmjjVKh .card-wrapper {
-    padding: 4rem;
-  }
-}
-.cid-uJRbmjjVKh .wrap {
-  background: url("../../../assets/images/background1.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.cid-uJRbmjjVKh .wrap .inner-wrap {
-  padding: 40px;
-}
-.cid-uJRbmjjVKh .card-title {
-  color: #ffffff;
-  text-align: left;
-}
-.cid-uJRbmjjVKh .mbr-text,
-.cid-uJRbmjjVKh .mbr-section-btn {
-  color: #ffffff;
-  text-align: left;
 }
 .cid-uJFKYTPfGI {
   padding-top: 1rem;
