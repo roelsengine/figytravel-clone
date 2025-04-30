@@ -3789,7 +3789,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0 lora\">\n      <p>The locals in the country also really stole my heart with the incredible hospitality and ease in which the people live with each other. .</p>\n      <footer class=\"blockquote-footer\">a volunteer <cite title=\"Source Title\"></cite></footer>\n    </blockquote>\n  </div>\n</div>",
-          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#000;\n    line-height:2;\n}\n\ndiv{\n    background-color:#fff;\n    padding: 0px 10% 0px 10%;\n}",
+          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#000;\n    line-height:2.5pt;\n}\n\ndiv{\n    background-color:#fff;\n    padding: 0px 0px 0px 0px;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
