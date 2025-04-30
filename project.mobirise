@@ -3290,8 +3290,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "\n    <blockquote class=\"blockquote lora text-center\">\n      <p>\"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.\"</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n",
-          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#000;\n}",
+          "_customHTML": "<div>\n    <blockquote class=\"blockquote lora text-center\">\n      <p>\"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.\"</p>\n      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n    </blockquote>\n</div>",
+          "_customCSS": "\n.lora {\n  font-family: \"Lora\", serif;\n  font-optical-sizing: auto;\n  font-weight: 200;\n  font-style: italic;\n    color:#F5F5F5;\n}\n\ndiv{\n    background-color:#000;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3302,6 +3302,71 @@
           "_PHPplaceholders": [],
           "_params": {},
           "_anchor": "custom-html-7q"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".img-wrapper img": {
+              "width": "120px",
+              "height": "120px",
+              "object-fit": "cover",
+              "border-radius": "50% !important",
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "width": "120px",
+                "height": "120px"
+              },
+              "@media (max-width: 768px)": {
+                "width": "80px",
+                "height": "80px"
+              }
+            },
+            ".img-wrapper": {
+              "display": "flex"
+            },
+            ".card-text": {
+              "text-align": "center"
+            },
+            ".card-title, .img-wrapper": {
+              "text-align": "center"
+            },
+            ".lora": {
+              "font-family": "\"Lora\", serif",
+              "font-optical-sizing": "auto",
+              "font-weight": "400",
+              "font-style": "normal"
+            },
+            "font-weight": "600",
+            "line-height": "3.5",
+            "color": "#212529",
+            "box-sizing": "border-box",
+            "margin": "10px",
+            "margin-bottom": "1rem",
+            "font-size": "1.25rem",
+            "text-align": "center!important"
+          },
+          "_name": "people07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\" font-family=\"lora\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to <b>preventing poverty</b>, securing <b>long-term employment</b> and <b>improving quality of life.\n                </b></p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.webp-240x320.webp\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uJAbU28J9r",
+          "_anchor": "people07-6w",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,
@@ -3435,72 +3500,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "color": "#000000"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#000000"
-            },
-            ".mbr-section-title": {
-              "color": "#000000"
-            },
-            ".img-wrapper img": {
-              "width": "120px",
-              "height": "120px",
-              "object-fit": "cover",
-              "border-radius": "50% !important",
-              "@media (min-width: 768px) and (max-width: 991px)": {
-                "width": "120px",
-                "height": "120px"
-              },
-              "@media (max-width: 768px)": {
-                "width": "80px",
-                "height": "80px"
-              }
-            },
-            ".img-wrapper": {
-              "display": "flex"
-            },
-            ".card-text": {
-              "text-align": "center"
-            },
-            ".card-title, .img-wrapper": {
-              "text-align": "center"
-            },
-            ".lora": {
-              "font-family": "\"Lora\", serif",
-              "font-optical-sizing": "auto",
-              "font-weight": "400",
-              "font-style": "normal"
-            },
-            "font-weight": "600",
-            "line-height": "3.5",
-            "color": "#212529",
-            "box-sizing": "border-box",
-            "margin": "10px",
-            "margin-bottom": "1rem",
-            "font-size": "1.25rem",
-            "text-align": "center!important"
-          },
-          "_name": "people07",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people07\" group=\"People\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n        <select title=\"Image Align\" name=\"contentAlign\">\n          <option value=\"justify-content-start\">Left</option>\n          <option value=\"justify-content-center\" selected>Center</option>\n          <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\" font-family=\"lora\">\n                    More than half of all children and teens do not meet minimum proficiency standards in reading and mathematics. Quality education provides an opportunity to learn and grow in a safe environment and is key to <b>preventing poverty</b>, securing <b>long-term employment</b> and <b>improving quality of life.\n                </b></p>\n                <div class=\"img-wrapper mt-4 {{contentAlign}}\" mbr-if=\"showImage\">\n                    <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-child-happy-with-gifts.webp-240x320.webp\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                </div>\n                <p class=\"card-title mbr-fonts-style mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .img-wrapper\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "uJAbU28J9r",
-          "_anchor": "people07-6w",
+          "_params": {},
           "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_JSplaceholders": []
         },
         {
           "alias": false,
@@ -3539,7 +3541,7 @@
           },
           "_name": "article11",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\">Volunteer program education</h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">As a volunteer, <b>you'll gain valuable teaching experience </b>by <b>leading classes of helping local teachers </b>with lessons in a variety of subjects. You may also have the chance to work in a school for students with disabilities, who need additional support to succeed.</h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Learn more\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\">Volunteer program education</h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">As a volunteer, <b>you'll gain valuable teaching experience </b>by <b>leading classes of helping local teachers </b>with lessons in a variety of subjects. You may also have the chance to work in a school for students with disabilities, who need additional support to succeed.</h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Learn more\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "article11-6k",
           "_isUserblock": true,
           "_cid": "uJu22zWNwT",
@@ -3554,7 +3556,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Program Summary</h3></li>\n        <li class=\"list-group-item \">6 week program (editable in consultation)</li>\n        <li class=\"list-group-item\">Affordable fees from € 343 per week</li>\n        <li class=\"list-group-item\">Includes accommodation, meals, airport pickup, listed activities, 24/7 support and more.</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Stay in our beautiful lodges at Mwanza Lake view Farm, set on the shores of Lake Victoria.</li>\n              <li class=\"list-group-item\">Amazing add-ons available, including Safari, Mount Kilimanjaro and Maasai village tours and the option to unwind and bring your volunteer journey to a close with a visit to the beautiful island of Zanzibar.</li>\n              <li class=\"list-group-item\">Minimum Age must be 18+</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3626,7 +3628,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Benefits</h3></li>\n        <li class=\"list-group-item \">Independent teaching and/or assisting the head teachers </li>\n        <li class=\"list-group-item\">Contributing to childhood education in underprivileged areas</li>\n        <li class=\"list-group-item\">Providing children with a safe environment to learn life skills</li>\n        <li class=\"list-group-item\">Gaining hands-on experience in childcare</li>\n              <li class=\"list-group-item\">Become part of FIGY Travel's volunteer family and be part of something bigger.</li>\n              <li class=\"list-group-item\">Personal development and growing</li>\n              <li class=\"list-group-item\">Being immersed in the Tanzanian culture</li>\n              <li class=\"list-group-item\">Exploring Africa's breathtaking wildlife</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: -20px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: -20px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -3688,7 +3690,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\" justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Job specification</h3></li>\n        <li class=\"list-group-item \">Assisting in teaching</li>\n        <li class=\"list-group-item\">Caring for children</li>\n        <li class=\"list-group-item\">Organizing games and activities</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Engaging with children</li>\n              <li class=\"list-group-item\">Performing other duties as needed</li>\n            \n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -4173,7 +4175,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Facilities</h3></li>\n        <li class=\"list-group-item \">Spacious rooms</li>\n        <li class=\"list-group-item\"> Comfortable bed</li>\n        <li class=\"list-group-item\">Ensuite bathroom with shower and toilet</li>\n        <li class=\"list-group-item\">Cleaning service</li>\n              <li class=\"list-group-item\">Mosquito net</li>\n              <li class=\"list-group-item\">Lake view</li>\n              <li class=\"list-group-item\">Wifi (extra GB for a fee)</li>\n              <li class=\"list-group-item\">Porch, Beach chairs, Parasols</li>\n              <li class=\"list-group-item\">Restaurant and lounge bar</li>\n              <li class=\"list-group-item\">Laundry service</li>\n              <li class=\"list-group-item\">Bikes</li>\n              <li class=\"list-group-item\">Swimming pool</li>\n\n      </ul>\n    </section>\n\n\n\n",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 18px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 10% 0px 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 14px;\n  color: #777;\n}\nli {\n    font-size: 20px;\n    \n}\n\nul{\n    align:center;\n    \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -4509,7 +4511,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div>\n<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">#</th>\n      <th scope=\"col\">Program fee</th>\n      <th scope=\"col\">Per day</th>\n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">1 week</th>\n      <td>€ 343</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">2 weeks</th>\n      <td>€ 686</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">4 weeks</th>\n      <td>€ 1.344</td>\n      <td>€ 48/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">6 weeks</th>\n      <td>€ 1.974</td>\n    <td>€ 47/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">8 weeks</th>\n      <td>€ 2.576</td>\n      <td>€ 46/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">10 weeks</th>\n      <td>€ 3.150</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n        <tr>\n      <th scope=\"row\">12 weeks</th>\n      <td>€ 3.780</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n  </tbody>\n</table>\n</div>",
-          "_customCSS": "\ndiv {\n  padding:20px 10% 20px 10% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "_customCSS": "\ndiv {\n  padding:20px 10% 20px 10% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\nth{\n    font-size:20px;\n    \n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -4524,7 +4526,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div class=\"row\" style=\"padding:20px 8% 20px 8%\">\n  <div class=\"col-sm-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n      \n          <div><ul class=\"list-group list-group-light list-group-flush \">\n    <li class=\"list-group-item list-group-item-action\">\n        <span class=\"socicon-facebook socicon\"></span>\n        <strong>Included in price</strong></li>\n              \n  <li class=\"list-group-item list-group-item-action\">\n\t\t\t\t\t\t<span class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>\n\t\t\t\t\t 3 nice meals per day</li>\n  <li class=\"list-group-item\">Accommodation + all MLVF facilities</li>\n  <li class=\"list-group-item\">Transport from and to Mwanza Airport</li>\n      <li class=\"list-group-item\"><span class=\"p-4 mbr-iconfont mobi-mbri-wifi mobi-mbri\"></span>Wi-fi</li>\n    <li class=\"list-group-item\"><span class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>24/7 in-country support</li>\n    <li class=\"list-group-item\"><span class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>Room cleaning</li>\n    <li class=\"list-group-item\"><span class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>Laundry service</li>\n    <li class=\"list-group-item\"><span class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>Bikes</li>\n    <li class=\"list-group-item\">Particular add-ons / activities</li>\n</ul>\n</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-sm-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <div><ul class=\"list-group list-group-dark list-group-flush\">\n            <li class=\"list-group-item list-group-item-action\"><strong>Excluded from price</strong></li>\n        <li class=\"list-group-item\">Flight ticket</li>\n        <li class=\"list-group-item\">VISA costs</li>\n        <li class=\"list-group-item\">Vaccination(s)</li>\n        <li class=\"list-group-item\">Malaria Medication</li>\n              <li class=\"list-group-item\">Tips or souvenirs</li>\n              <li class=\"list-group-item\">Alcoholic beverages</li>\n              <li class=\"list-group-item\">Personal guides</li>\n              <li class=\"list-group-item\">Add-ons such as Safari/Zanzibar </li>\n              \n      </ul>\n    </div>\n      </div>\n    </div>\n  </div>\n</div>",
-          "_customCSS": "\n",
+          "_customCSS": "\nli\n{\n    font-size:20px;}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
