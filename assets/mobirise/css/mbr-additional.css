@@ -3322,6 +3322,23 @@ a {
 .cid-uIxldRrMfm .mbr-section-btn {
   text-align: center;
 }
+.cid-uJReChBq4t {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-uJReChBq4t .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uJReChBq4t .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 .cid-uJR8uhEUaD {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -3366,6 +3383,13 @@ a {
 .cid-uJR8uhEUaD .img-wrapper {
   text-align: center;
 }
+.cid-uJR8uhEUaD .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+}
 #custom-html-6m {
   /* Type valid CSS here */
 }
@@ -3387,7 +3411,7 @@ a {
 .cid-uJRbmjjVKh {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #edefeb;
+  background-image: url("../../../assets/images/background1.webp");
 }
 .cid-uJRbmjjVKh .mbr-fallback-image.disabled {
   display: none;
