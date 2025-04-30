@@ -3282,15 +3282,15 @@ a {
 #custom-html-6l ul {
   align: center;
 }
-.cid-uIxldRrMfm {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+.cid-uJRC3rlxBa {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-uIxldRrMfm .mbr-fallback-image.disabled {
+.cid-uJRC3rlxBa .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-uIxldRrMfm .mbr-fallback-image {
+.cid-uJRC3rlxBa .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -3298,29 +3298,6 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-}
-.cid-uIxldRrMfm .card-wrapper {
-  background: #ffffff;
-}
-@media (max-width: 767px) {
-  .cid-uIxldRrMfm .card-wrapper {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-uIxldRrMfm .card-wrapper {
-    padding: 2.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-uIxldRrMfm .card-wrapper {
-    padding: 4rem;
-  }
-}
-.cid-uIxldRrMfm .mbr-text,
-.cid-uIxldRrMfm .mbr-section-btn {
-  text-align: center;
 }
 .cid-uJReChBq4t {
   padding-top: 0rem;
@@ -3388,73 +3365,8 @@ a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
-}
-.cid-uJRpKRnZEM {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-uJRpKRnZEM .mbr-text {
-  color: #000000;
-}
-.cid-uJRpKRnZEM .mbr-section-subtitle {
-  color: #000000;
-  text-align: center;
-}
-.cid-uJRpKRnZEM .mbr-section-title {
-  color: #000000;
-  text-align: center;
-}
-.cid-uJRpKRnZEM .img-wrapper img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 4rem !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-uJRpKRnZEM .img-wrapper img {
-    width: 120px;
-    height: 120px;
-  }
-}
-.cid-uJRpKRnZEM p {
-  line-height: 1.3;
-}
-.cid-uJRpKRnZEM .mbr-iconfont {
-  font-size: 5rem;
-  color: #ffffff;
-  opacity: 0.2;
-}
-@media (max-width: 992px) {
-  .cid-uJRpKRnZEM .mbr-iconfont {
-    display: none;
-  }
-}
-.cid-uJRpKRnZEM .wrapper {
-  position: relative;
-}
-.cid-uJRpKRnZEM .wrapper .icon1 {
-  position: absolute;
-  left: -100px;
-  top: -60px;
-}
-.cid-uJRpKRnZEM .wrapper .icon2 {
-  position: absolute;
-  right: -100px;
-  bottom: -30px;
-}
-.cid-uJRpKRnZEM .img-wrapper {
-  display: flex;
-}
-.cid-uJRpKRnZEM .card-text {
-  text-align: center;
-}
-.cid-uJRpKRnZEM .card-title,
-.cid-uJRpKRnZEM .img-wrapper {
-  text-align: center;
-  color: #a6a99c;
 }
 #custom-html-6m {
   /* Type valid CSS here */
