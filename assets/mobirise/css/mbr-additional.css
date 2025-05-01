@@ -3050,11 +3050,7 @@ a {
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-image: url("../../../assets/images/mbr-1920x1278.webp");
-}
-.cid-uJtyY9JwD5 .mbr-overlay {
-  background-color: #232323;
-  opacity: 0.6;
+  background-color: #000000;
 }
 .cid-uJtyY9JwD5 .mbr-fallback-image.disabled {
   display: none;
