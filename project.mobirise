@@ -3441,21 +3441,6 @@
         },
         {
           "alias": false,
-          "_styles": {},
-          "_name": "article08",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section class=\"justify-content-center w-100\" style=\"padding: 0px 10% 0px 10%\">\n          <ul class=\"list-group list-group-light list-group-flush text-center\">\n              <li class=\"list-group-item\"><h3>Program Summary</h3></li>\n        <li class=\"list-group-item \">6 week program (editable in consultation)</li>\n        <li class=\"list-group-item\">Affordable fees from € 343 per week</li>\n        <li class=\"list-group-item\">Includes accommodation, meals, airport pickup, listed activities, 24/7 support and more.</li>\n        <li class=\"list-group-item\">Organize fun and educational activities for children.</li>\n              <li class=\"list-group-item\">Stay in our beautiful lodges at Mwanza Lake view Farm, set on the shores of Lake Victoria.</li>\n              <li class=\"list-group-item\">Amazing add-ons available, including <strong>Safari</strong>, <strong>Mount Kilimanjaro</strong> and <strong>Maasai village tours</strong> and the option to unwind and bring your volunteer journey to a close with a visit to the <strong>beautiful island of Zanzibar</strong>.</li>\n              <li class=\"list-group-item\">Minimum Age must be 18+</li>\n\n      </ul>\n    </section>",
-          "_cid": "uKp69ZChig",
-          "_anchor": "article08-8b",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
           "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
