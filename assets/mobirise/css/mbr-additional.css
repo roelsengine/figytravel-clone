@@ -3208,39 +3208,6 @@ a {
 .cid-uKp5Mth17Z .mbr-section-btn {
   color: #000000;
 }
-.cid-uKp6X5rdP7 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
-}
-.cid-uKp6X5rdP7 .counter-container ol {
-  margin-bottom: 0;
-  padding-left: 2.25rem;
-  counter-reset: myCounter;
-}
-.cid-uKp6X5rdP7 .counter-container ol li {
-  margin-bottom: 2rem;
-  list-style: none;
-  position: relative;
-}
-.cid-uKp6X5rdP7 .counter-container ol li:before {
-  font-weight: 700;
-  position: absolute;
-  left: -1.5em;
-  counter-increment: myCounter;
-  content: counter(myCounter);
-  transition: all .2s;
-  color: #9fe870;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cid-uKp6X5rdP7 .mbr-section-title {
-  text-align: center;
-}
-.cid-uKp6X5rdP7 .mbr-section-subtitle {
-  text-align: center;
-}
 .cid-uKp6Px2ejq {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -3293,6 +3260,54 @@ a {
 .cid-uKp6Px2ejq .mbr-section-btn {
   color: #ffffff;
   text-align: left;
+}
+.cid-uKp8cLWzu0 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #edefeb;
+}
+.cid-uKp8cLWzu0 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uKp8cLWzu0 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-uKp8cLWzu0 .card-content-text {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .cid-uKp8cLWzu0 .card-content-text {
+    padding: 0 2.25rem 2.25rem 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uKp8cLWzu0 .card-content-text {
+    padding: 1rem 4rem 4rem 4rem;
+  }
+}
+.cid-uKp8cLWzu0 .card-wrapper {
+  background: #ffffff;
+}
+.cid-uKp8cLWzu0 .mbr-text,
+.cid-uKp8cLWzu0 .mbr-section-btn {
+  color: #000000;
+  text-align: left;
+}
+.cid-uKp8cLWzu0 .card-title,
+.cid-uKp8cLWzu0 .card-box {
+  text-align: left;
+  color: #000000;
+}
+.cid-uKp8cLWzu0 .image-wrapper img {
+  width: 100%;
 }
 #custom-html-6l {
   /* Type valid CSS here */
