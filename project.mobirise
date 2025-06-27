@@ -1118,13 +1118,13 @@
             "slides": [
               {
                 "image": "@PROJECT_PATH@/assets/images/volunteers-tanzania-cheeta-1920x1280.webp",
-                "active": true,
+                "active": false,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-5",
+                "customStyle1": "display-2",
                 "customStyle2": "display-7",
                 "customStyle3": "display-4",
                 "alt": "",
@@ -1133,12 +1133,12 @@
                 "overlay": true,
                 "contentAlign": "center",
                 "text": "<i>Work as a volunteer or an intership in tanzania mwanza</i>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">Volunteer Agriculture</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"page3.html\" data-toolbar=\"-mbrBtnMove\">Volunteer Teaching Education</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Volunteer Healthcare</a> ",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">Volunteer Agriculture&nbsp;</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"page3.html\" data-toolbar=\"-mbrBtnMove\">Volunteer Teaching Education</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Volunteer Healthcare</a> ",
                 "overlayOpacity": "0.3"
               },
               {
                 "image": "@PROJECT_PATH@/assets/images/mbr-1920x1080.webp",
-                "active": false,
+                "active": true,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -1173,7 +1173,7 @@
                 "overlay": true,
                 "contentAlign": "center",
                 "text": "<i>Work to improve the community and visit paradise on earth</i>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">See programs</a> ",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">See activities&nbsp;</a> ",
                 "overlayOpacity": "0.3"
               }
             ]
