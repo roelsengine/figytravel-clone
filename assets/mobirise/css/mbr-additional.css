@@ -1700,7 +1700,7 @@ a {
   color: #000000;
 }
 .cid-uGVDAF4Ic2 .mbr-section-subtitle {
-  color: #00a3fa;
+  color: #000000;
 }
 .cid-uGVDAF4Ic2 .mbr-section-title {
   color: #000000;
@@ -1711,7 +1711,7 @@ a {
   text-align: left;
 }
 .cid-uGVDAF4Ic2 .item-wrapper {
-  background: #ffffff;
+  background: #3a341c;
   margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
@@ -1731,11 +1731,11 @@ a {
   }
 }
 .cid-uGVDAF4Ic2 .details-icon {
-  color: #00a3fa;
+  color: #ffffff;
   padding-right: 0.5rem;
 }
 .cid-uGVDAF4Ic2 .mbr-card-subtitle {
-  color: #232323;
+  color: #ffffff;
   text-align: left;
 }
 .cid-uGVDAF4Ic2 .details .details-item {
@@ -1744,7 +1744,10 @@ a {
 }
 .cid-uGVDAF4Ic2 .mbr-tag,
 .cid-uGVDAF4Ic2 .tags-wrapper {
-  color: #000000;
+  color: #ffffff;
+}
+.cid-uGVDAF4Ic2 .mbr-card-title {
+  color: #ffffff;
 }
 .cid-uIxJCGmpbN {
   padding-top: 1rem;
