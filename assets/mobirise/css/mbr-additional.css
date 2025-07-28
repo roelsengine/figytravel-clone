@@ -1923,64 +1923,6 @@ a {
 .cid-uSgWLkxanh .content-head {
   max-width: 800px;
 }
-.cid-uSgWuga288 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
-}
-.cid-uSgWuga288 .mbr-section-title {
-  margin: 15px 0 55px;
-}
-.cid-uSgWuga288 .mbr-text {
-  color: #919dab;
-}
-.cid-uSgWuga288 .card__wrapper {
-  margin-bottom: 70px;
-}
-.cid-uSgWuga288 .price__card {
-  margin-top: 10px;
-  color: #919dab;
-  margin-bottom: 0;
-}
-.cid-uSgWuga288 .title__card {
-  margin-bottom: 0;
-}
-.cid-uSgWuga288 .icons {
-  margin-top: 25px;
-  border-radius: 50%;
-  background-color: #ebeaed;
-  width: 130px;
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cid-uSgWuga288 .mbr-iconfont {
-  font-size: 62px;
-  color: #919dab;
-}
-.cid-uSgWuga288 .mbr-section-btn {
-  margin-top: 40px;
-}
-.cid-uSgWuga288 .mbr-section-btn .btn {
-  font-weight: 500;
-}
-.cid-uSgWuga288 .card__text {
-  margin-top: 45px;
-  margin-bottom: 0;
-}
-.cid-uSgWuga288 .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uSgWuga288 .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
 .cid-uIbl0IEmT7 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2024,7 +1966,7 @@ a {
   text-align: left;
 }
 .cid-uGVDAF4Ic2 .item-wrapper {
-  background: #f80784;
+  background: #3a341c;
   margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
