@@ -4150,8 +4150,8 @@ a {
   text-align: center;
 }
 .cid-uSwrZLrpP2 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-uSwrZLrpP2 .mbr-fallback-image.disabled {
@@ -4500,6 +4500,7 @@ a {
 }
 .cid-uSxHFoqoJd .mbr-section-title {
   color: #000000;
+  text-align: center;
 }
 .cid-uShC1w1dKR {
   padding-top: 60px;
