@@ -2857,103 +2857,10 @@ a {
 .cid-uSgP8EBeiY .panel-text {
   color: #ffffff;
 }
-.cid-uSgNjQmFss {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-color: #101010;
-}
-.cid-uSgNjQmFss img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-.cid-uSgNjQmFss .mbr-iconfont-1 {
-  color: #ffeb69;
-  font-size: 1rem;
-  transition: 0.7s;
-}
-.cid-uSgNjQmFss .mbr-section-title {
-  margin-bottom: 4rem;
-}
-.cid-uSgNjQmFss .mbr-section-subtitle {
-  color: #f7f7f7;
-  margin-bottom: 1.5rem;
-}
-.cid-uSgNjQmFss .card-img {
-  margin-bottom: 1.3rem;
-}
-.cid-uSgNjQmFss .card-title {
-  margin-bottom: 1.5rem;
-}
-.cid-uSgNjQmFss .row {
-  justify-content: center;
-}
-@media (max-width: 992px) {
-  .cid-uSgNjQmFss .card {
-    margin-bottom: 3rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-uSgNjQmFss .card-inner {
-    padding: 3rem 1rem;
-  }
-}
-@media (min-width: 767px) {
-  .cid-uSgNjQmFss .row {
-    padding: 0 1rem;
-  }
-  .cid-uSgNjQmFss .card-inner {
-    padding: 3.3rem 2.5rem;
-  }
-}
-.cid-uSgNjQmFss .card-inner {
-  background-color: #191919;
-  transition: 0.3s;
-  border: 2px solid rgba(255, 234, 100, 0);
-}
-.cid-uSgNjQmFss .card:hover .card-inner {
-  border: 2px solid #ffea64;
-}
-.cid-uSgNjQmFss .mbr-text {
-  margin-bottom: 1.3rem;
-  color: #828282;
-}
-.cid-uSgNjQmFss .card-people {
-  display: flex;
-  align-items: center;
-}
-.cid-uSgNjQmFss .user_image {
-  margin-right: 1rem;
-}
-.cid-uSgNjQmFss .mbr-author-desc {
-  color: #00a3fa;
-  font-weight: 500;
-}
-.cid-uSgNjQmFss .vertical-line:before {
-  content: '';
-  background-color: #ffea64;
-  height: 60px;
-  width: 2px;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-}
-.cid-uSgNjQmFss .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uSgNjQmFss .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
 .cid-uPqJMdZLdw {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #edefeb;
+  background-color: #ffffff;
 }
 .cid-uPqJMdZLdw .mbr-fallback-image.disabled {
   display: none;
