@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 422,
+    "uniqCompNum": 425,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -1318,6 +1318,208 @@
           "_params": {}
         },
         {
+          "_name": "testimonials2",
+          "_sourceTheme": "successm4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "((@paddingBottom + 5px) * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel-item": {
+              "padding": "0 10%",
+              "justify-content": "center",
+              "-webkit-justify-content": "center"
+            },
+            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
+              "display": "flex"
+            },
+            ".img-box": {
+              "position": "relative",
+              "width": "fit-content",
+              "margin": "auto"
+            },
+            ".carousel-controls .mbr-iconfont": {
+              "font-family": "Moririse2 !important",
+              "font-size": "1rem",
+              "font-weight": "900",
+              "transition": "opacity .3s"
+            },
+            ".carousel-controls": {
+              "a": {
+                "transition": "all .3s",
+                "border-radius": "50%",
+                "border": "none",
+                "background-color": "transparent",
+                "span": {
+                  "color": "@arrowsColor !important",
+                  "font-size": "(@arrowsSize * 5px) !important"
+                },
+                "&:hover": {
+                  ".mobi-mbri-left": {
+                    "transform": "translateX(-5px)"
+                  },
+                  ".mobi-mbri-right": {
+                    "transform": "translateX(5px)"
+                  }
+                }
+              },
+              ".carousel-control-next, .carousel-control-prev": {
+                "opacity": "1",
+                "width": "44px",
+                "height": "44px"
+              },
+              ".carousel-control-next": {
+                "bottom": "auto",
+                "top": "44%"
+              },
+              ".carousel-control-prev": {
+                "bottom": "auto",
+                "top": "44%"
+              }
+            },
+            ".author-box": {
+              "margin-bottom": "14px",
+              "display": "flex",
+              "flex-direction": "column",
+              "justify-content": "center"
+            },
+            ".face": {
+              "width": "130px",
+              "height": "130px",
+              "border-radius": "100%",
+              "box-shadow": "none",
+              "margin": "0rem",
+              "object-fit": "cover"
+            },
+            ".author": {
+              "margin": "auto 0"
+            },
+            ".mbr-text": {
+              "margin-bottom": "34px !important"
+            },
+            "h3, h4": {
+              "margin": "0",
+              "padding": "0"
+            },
+            ".mbr-bottom": {
+              "color": "#767676"
+            },
+            ".box": {
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "max-width": "800px!important"
+            },
+            "@media (max-width: 992px)": {
+              ".carousel-controls": {
+                "a": {
+                  "span": {
+                    "bottom": "auto",
+                    "top": "30%"
+                  }
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".carousel-controls": {
+                "a": {
+                  "span": {
+                    "bottom": "auto",
+                    "top": "20%"
+                  }
+                }
+              }
+            },
+            ".carousel-indicators": {
+              "bottom": "-65px",
+              "@media (max-width: 786px)": {
+                "bottom": "-75px"
+              }
+            },
+            ".carousel-indicators li": {
+              "margin-right": "31px",
+              "margin-left": "31px",
+              "opacity": "(@dotsOpacity * 0.1)",
+              "width": "6px",
+              "height": "6px",
+              "max-width": "6px",
+              "max-height": "6px",
+              "min-width": "6px",
+              "min-height": "6px",
+              "background": "@dotsColor",
+              "border": "none",
+              "position": "relative",
+              "transition": "0.3s",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "border-radius": "50%",
+              "&:hover": {
+                "opacity": "1 !important"
+              },
+              "& svg": {
+                "position": "absolute",
+                "display": "block",
+                "width": "36px",
+                "height": "36px",
+                "z-index": "1",
+                "fill": "none",
+                "color": "@dotsColorActive",
+                "stroke": "none",
+                "overflow": "visible",
+                "& circle": {
+                  "stroke-dasharray": "110",
+                  "stroke-dashoffset": "110",
+                  "stroke": "@dotsColorActive",
+                  "stroke-width": "1",
+                  "transition": "all 0.6s cubic-bezier(0.43, 0.41, 0.36, 0.9)",
+                  "transform": "rotate(-145deg)",
+                  "transform-origin": "center"
+                }
+              }
+            },
+            ".carousel-indicators li.active": {
+              "background": "@dotsColorActive",
+              "& circle": {
+                "stroke-dashoffset": "0",
+                "transform": "rotate(55deg)"
+              }
+            },
+            ".mbr-section-title": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"carousel slide testimonials-slider testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video'&amp;&amp;bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n\n    <mbr-parameters>\n        \n        <header>Size</header>\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline=\"\">\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline=\"\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <header>Slider</header>\n        <input type=\"range\" inline=\"\" title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconbgColor\" value=\"#f7e4d6\" selected=\"\">\n        <input type=\"checkbox\" title=\"Show Arrows\" name=\"showArrows\" checked=\"\">\n        <input type=\"color\" title=\"Arrow Color\" name=\"arrowsColor\" value=\"#0088ff\" condition=\"showArrows\">\n        <input type=\"range\" title=\"Arrow Size\" name=\"arrowsSize\" value=\"7\" min=\"1\" max=\"10\" step=\"1\" condition=\"showArrows\">\n        <input type=\"checkbox\" title=\"Show Dots\" name=\"dots\" checked=\"\">\n        <input type=\"color\" title=\"Dots Color\" name=\"dotsColor\" value=\"#000000\" condition=\"dots\">\n        <input type=\"color\" title=\"Dots Color Active\" name=\"dotsColorActive\" value=\"#000000\" condition=\"dots\">\n        <input type=\"range\" title=\"Dots Opacity\" name=\"dotsOpacity\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"dots\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-3.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&amp;&amp;bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&amp;&amp;bg.type !== 'color'\">\n        \n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&amp;&amp;bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <div class=\"carousel slide\" data-ride=\"carousel\" data-bs-ride=\"carousel\" role=\"listbox\">\n            <ol class=\"carousel-indicators\" mbr-if=\"dots\">\n                <li data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\">\n                    <svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"1\" data-bs-slide-to=\"1\" mbr-if=\"testimonialsSlides > 1\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"2\" data-bs-slide-to=\"2\" mbr-if=\"testimonialsSlides > 2\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"3\" data-bs-slide-to=\"3\" mbr-if=\"testimonialsSlides > 3\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"4\" data-bs-slide-to=\"4\" mbr-if=\"testimonialsSlides > 4\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"5\" data-bs-slide-to=\"5\" mbr-if=\"testimonialsSlides > 5\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"6\" data-bs-slide-to=\"6\" mbr-if=\"testimonialsSlides > 6\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"7\" data-bs-slide-to=\"7\" mbr-if=\"testimonialsSlides > 7\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"8\" data-bs-slide-to=\"8\" mbr-if=\"testimonialsSlides > 8\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"9\" data-bs-slide-to=\"9\" mbr-if=\"testimonialsSlides > 9\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"10\" data-bs-slide-to=\"10\" mbr-if=\"testimonialsSlides > 10\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"11\" data-bs-slide-to=\"11\" mbr-if=\"testimonialsSlides > 11\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"12\" data-bs-slide-to=\"12\" mbr-if=\"testimonialsSlides > 12\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"13\" data-bs-slide-to=\"13\" mbr-if=\"testimonialsSlides > 13\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"14\" data-bs-slide-to=\"14\" mbr-if=\"testimonialsSlides > 14\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"15\" data-bs-slide-to=\"15\" mbr-if=\"testimonialsSlides > 15\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"16\" data-bs-slide-to=\"16\" mbr-if=\"testimonialsSlides > 16\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"17\" data-bs-slide-to=\"17\" mbr-if=\"testimonialsSlides > 17\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"18\" data-bs-slide-to=\"18\" mbr-if=\"testimonialsSlides > 18\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"19\" data-bs-slide-to=\"19\" mbr-if=\"testimonialsSlides > 19\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n            </ol>\n            <div mbr-list=\"\" mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people11.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">Briana Scott\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people12.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">George Malone\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people10.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">David Tate\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people9.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">Sophia Neal\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-controls\" mbr-if=\"showArrows\">\n                <a data-app-prevent-settings=\"\" class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n                    <span aria-hidden=\"true\" class=\"mbr-iconfont mobi-mbri-left mobi-mbri\"></span>\n                    <span class=\"sr-only visually-hidden\">Previous</span>\n                </a>\n                <a data-app-prevent-settings=\"\" class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n                    <span aria-hidden=\"true\" class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span>\n                    <span class=\"sr-only visually-hidden\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "testimonials2-bq",
+          "_isUserblock": true,
+          "_cid": "uSxLKTpSG3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "_name": "people2",
           "_sourceTheme": "naturalm4",
           "_styles": {
@@ -1507,7 +1709,8 @@
               "text-align": "left"
             },
             ".item-subtitle": {
-              "text-align": "left"
+              "text-align": "left",
+              "color": "#919090"
             },
             ".mbr-text, .item .mbr-section-btn": {
               "text-align": "left"
@@ -1518,9 +1721,75 @@
           },
           "_name": "pricing02",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing02\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <select title=\"Columns\" name=\"cardsWidth\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\">3</option>\n      <option value=\"3\" selected>4</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\">\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <input type=\"checkbox\" name=\"showmainButtons\" title=\"Buttons\">\n    <header>Cards</header>\n    <input type=\"checkbox\" name=\"autoSize\" title=\"Auto Size\" checked>\n    <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"autoSize && !(showButtons==false && showCardSubtitle==false && showCardTitle==false && showText==false)\">\n    <input type=\"checkbox\" title=\"Spacing\" name=\"spacing\" checked>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Price\">\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle || showmainButton\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Our internship and volunteer programs</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-head .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n          <div class=\"mbr-section-btn align-center item-footer mb-0 mt-4\" mbr-if=\"showmainButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Get Started</a></div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.webp\" alt=\"Stage Tanzania\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Health Medical</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n              $5.00\n            </h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div><div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-703x469.webp\" alt=\"Stage Tanzania\" data-slide-to=\"1\" data-bs-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Education teach</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n              $5.00\n            </h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/tanzania-travel-lodge-agriculture.webp\" alt=\"Mobirise Website Builder\" data-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Agriculture farming</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n              $7.00\n            </h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-campfire-259x194.webp\" alt=\"Stage Tanzania\" data-bs-slide-to=\"3\" data-slide-to=\"3\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Volunteers</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n              $10.00\n            </h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.<br>\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing02\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <select title=\"Columns\" name=\"cardsWidth\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\">3</option>\n      <option value=\"3\" selected>4</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\">\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <input type=\"checkbox\" name=\"showmainButtons\" title=\"Buttons\">\n    <header>Cards</header>\n    <input type=\"checkbox\" name=\"autoSize\" title=\"Auto Size\" checked>\n    <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"autoSize && !(showButtons==false && showCardSubtitle==false && showCardTitle==false && showText==false)\">\n    <input type=\"checkbox\" title=\"Spacing\" name=\"spacing\" checked>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Price\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle || showmainButton\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Our internship and volunteer programs</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-head .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n          <div class=\"mbr-section-btn align-center item-footer mb-0 mt-4\" mbr-if=\"showmainButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Get Started</a></div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.webp\" alt=\"Stage Tanzania\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Health Medical</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div><div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-703x469.webp\" alt=\"Stage Tanzania\" data-slide-to=\"1\" data-bs-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Education teach</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/tanzania-travel-lodge-agriculture.webp\" alt=\"Mobirise Website Builder\" data-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Agriculture farming</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-campfire-259x194.webp\" alt=\"Stage Tanzania\" data-bs-slide-to=\"3\" data-slide-to=\"3\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Volunteers</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit habitant turpis.<br>\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
           "_cid": "uSgWLkxanh",
           "_anchor": "pricing02-9m",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".btn": {
+              "padding": "1rem 2rem"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".item-wrapper": {
+              ".mbr-iconfont": {
+                "margin": "auto",
+                "display": "inline-flex",
+                "font-size": "2rem",
+                "color": "@iconColor",
+                "width": "40px",
+                "justify-content": "center",
+                "align-items": "center"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#000000"
+            },
+            ".card-text": {
+              "color": "#232323"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#a6a99c"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            }
+          },
+          "_name": "people02",
+          "_sourceTheme": "rangem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people02\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"6\">2</option>\n\t\t\t<option value=\"4\" selected>3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Icon\" name=\"showTitleIcon\" condition=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n\n\t\t<header>Card</header>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Name\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Stars\" name=\"showStars\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#ffffff\" selected condition=\"showStars\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/rangem5/components/_images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/rangem5/components/_images/background4.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row mb-5 justify-content-center\" mbr-if=\"showMainTitle || showMainSubtitle\">\n\t\t\t<div class=\"col-12 content-head\" mbr-class=\"{'col-lg-9': cardsAmount == '3'}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\t<b>Reviews</b></h3>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">This is how we got rated</h5>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t\n\t\t\t\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5 active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tGoogle review</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tInterns</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tTrip advisor</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row mt-0 mt-md-5\">\n\t\t\t<div class=\"col-12 align-center\" mbr-if=\"showButtons\">\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Read More</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "uSgHEZ84qx",
+          "_anchor": "people02-8r",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -2082,248 +2351,6 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".user": {
-              "background": "@card",
-              "border-radius": "2rem",
-              "padding": "2rem"
-            },
-            ".user_image": {
-              "@media (max-width: 767px)": {
-                "flex-direction": "column",
-                "align-items": "center"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".user": {
-                "padding": "1rem"
-              }
-            },
-            ".wrap": {
-              "display": "flex",
-              "flex-direction": "column",
-              "justify-content": "center"
-            },
-            ".embla__slide": {
-              "display": "flex",
-              "justify-content": "center",
-              "position": "relative",
-              "min-width": "700px",
-              "max-width": "700px",
-              "@media (max-width: 768px)": {
-                "min-width": "70%",
-                "max-width": "initial",
-                "margin-left": "1rem !important",
-                "margin-right": "1rem !important"
-              }
-            },
-            ".embla__button--next, .embla__button--prev": {
-              "display": "flex"
-            },
-            ".embla__button": {
-              "top": "50%",
-              "width": "60px",
-              "height": "60px",
-              "margin-top": "-1.5rem",
-              "font-size": "22px",
-              "background-color": "rgba(0, 0, 0, 0.5)",
-              "color": "#fff",
-              "border": "2px solid #fff",
-              "border-radius": "50%",
-              "transition": "all 0.3s",
-              "position": "absolute",
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "& when not (@arrows)": {
-                "display": "none"
-              },
-              "& when not (@arrowsMobile)": {
-                "@media (max-width: 768px)": {
-                  "display": "none"
-                }
-              },
-              "&:disabled": {
-                "cursor": "default",
-                "display": "none"
-              },
-              "&:hover": {
-                "background": "#000",
-                "color": "rgba(255, 255, 255, 0.5)"
-              },
-              "&.embla__button--prev": {
-                "left": "0",
-                "margin-left": "2.5rem"
-              },
-              "&.embla__button--next": {
-                "right": "0",
-                "margin-right": "2.5rem"
-              },
-              "@media (max-width: 768px)": {
-                "top": "auto"
-              }
-            },
-            ".img-wrapper": {
-              "img": {
-                "width": "80px",
-                "height": "80px",
-                "border-radius": "50%",
-                "object-fit": "cover",
-                "margin-right": "1.5rem",
-                "@media (max-width: 767px)": {
-                  "margin-right": "0rem",
-                  "margin-bottom": "1rem"
-                }
-              }
-            },
-            ".iconfont-wrapper": {
-              "margin-right": "0",
-              "margin-left": "auto",
-              "span": {
-                "color": "@secondaryColor",
-                "font-size": "1.3rem",
-                "margin": "0 3px"
-              },
-              "@media (max-width: 767px)": {
-                "margin": "auto",
-                "margin-top": "1rem"
-              }
-            },
-            "@media (max-width: 230px)": {
-              ".user_image": {
-                "width": "100%",
-                "height": "auto"
-              }
-            },
-            ".embla": {
-              "position": "relative",
-              "width": "100%"
-            },
-            ".embla__viewport": {
-              "overflow": "hidden",
-              "width": "100%"
-            },
-            ".embla__viewport.is-draggable": {
-              "cursor": "grab"
-            },
-            ".embla__viewport.is-dragging": {
-              "cursor": "grabbing"
-            },
-            ".embla__container": {
-              "display": "flex",
-              "user-select": "none",
-              "-webkit-touch-callout": "none",
-              "-khtml-user-select": "none",
-              "-webkit-tap-highlight-color": "transparent"
-            },
-            ".user_desk": {
-              "color": "#353535"
-            },
-            "H3": {
-              "text-align": "center"
-            }
-          },
-          "_name": "people02",
-          "_sourceTheme": "learnm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people2 mbr-embla\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"embla\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" inline>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\">\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\">\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked>\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\" checked>\n        <input type=\"color\" name=\"card\" title=\"BG\" value=\"#ffffff\" selected>\n        <header>Slides</header>\n        <input type=\"range\" name=\"gap\" title=\"Gap\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Author Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Author Title\" name=\"showDesk\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/learnm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f4f4f4\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/learnm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"position-relative text-center\">\n        <h3 class=\"mb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Student Feedback</b></h3>\n\n        <div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\">\n            <div class=\"embla__viewport\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n                <div class=\"embla__container\">\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image d-flex\">\n                                <div class=\"img-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/volunteer-eva-h-160x155.webp\" alt=\"Mobirise Website Builder\">\n                                </div>\n                                <div class=\"wrap\">\n                                    <div mbr-text class=\"user_name align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\"><b>Eva H.</b></div>\n                                    <div mbr-text class=\"user_desk align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                        Volunteer/internship</div>\n                                </div>\n\n                                <div class=\"iconfont-wrapper d-flex\">\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n\n                                </div>\n\n                            </div>\n                            <div class=\"user_text mt-3\">\n                                <p class=\"mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\"><br><b>\"My trip to Tanzania has been one of my best experiences in life\"</b><br><br>\"I got the opportunity from my school to do my internship in another country, and I was really interested in Tanzania. Me and three other students were introduced to FIGY Travel and Stichting Support School Fees (SSF), and we felt an instant connection. So, in October 2022 we stayed at Mwanza Lake View Farm for three months! We  volunteered at the schools and visited a lot of places. Like a prison, some farms, Mwanza town, Juma island and many kinds of schools. We also did a lot of activities with the children from the school and from the neighborhood like games, puzzles, singing, dancing, sports, and we provided sexual education. This was a great experience, and I  learned a lot from it. The people of Tanzania are so welcoming and friendly, it was amazing to meet all the teachers, children, and residents. The people that work at the farm are also so super friendly, they made me feel at home during my stay, so that was really nice. I felt very grateful to meet all these wonderful people.\n<br>\n<br></p>\n                            </div>\n\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image d-flex\">\n                                <div class=\"img-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/volunteer-kiki-k-160x166.webp\" alt=\"Mobirise Website Builder\">\n                                </div>\n                                <div class=\"wrap\">\n                                    <div mbr-text class=\"user_name align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                        <b>Kikkie K</b></div>\n                                    <div mbr-text class=\"user_desk align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                        Volunteer/internship</div>\n                                </div>\n\n                                <div class=\"iconfont-wrapper d-flex\">\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n\n                                </div>\n\n                            </div>\n                            <div class=\"user_text mt-3\">\n                                <p class=\"mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\"><b>\"I would definitely recommend volunteering/doing an internship at this organization and I would love to come back again\"&nbsp;</b><br><br>For my pedagogy study internship, I came to Mwanza Lake View Farm in October 2022, where I stayed for three months. During these three months, I got to see a lot of the area and visited several schools. Some of these schools have already been renovated by FIGY's partner foundation: Stichting Support School Fees. This is a big step for the health and education of  children, but also for the teachers. Thanks to Baraka (the Tanzanian co-owner of SSF), I was able to visit these schools and the surrounding area because he brought me here with his van. Besides Baraka, many other people work at Mwanza Lake View Farm. Everyone is very friendly and they give you a warm feeling as soon as you arrive. A lot is arranged for you if you want to get out and about, but if you want to stay at the Farm, that's certainly not a punishment either; the farm is beautifully situated on Lake Victoria, has a small beach and is nicely decorated with plants, besides that, the cottages are also fully equipped.\n<br>I would definitely recommend volunteering/doing an internship at this organization and I would love to come back again.\n<br>\n<br><br></p>\n                            </div>\n\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image d-flex\">\n                                <div class=\"img-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/volunteer-dani-esquivel-160x143.webp\" alt=\"Volunteer Internship\">\n                                </div>\n                                <div class=\"wrap\">\n                                    <div mbr-text class=\"user_name align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                        <b>Dani Esquivel</b></div>\n                                    <div mbr-text class=\"user_desk align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                        Volunteer/internship</div>\n                                </div>\n\n                                <div class=\"iconfont-wrapper d-flex\">\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n\n                                </div>\n\n                            </div>\n                            <div class=\"user_text mt-3\">\n                                <p class=\"mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\"><b>\"My trip to Tanzania has been one of my best experiences in life\"</b><br><br>\"My trip to Tanzania was one of my best experiences in my life. The people that work on the project, the lodge and it's surroundings are wonderful and they make sure that everything is perfect and volunteers feel safe all the time. The project itself is a life changing experience, surround by love, smiles and gratefulness. I recommend this to everyone, age doesn't matter, you just need to want it.\"<b>&nbsp;</b><br></p>\n                            </div>\n\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <button class=\"embla__button embla__button--prev\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-prev mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Previous</span>\n            </button>\n            <button class=\"embla__button embla__button--next\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Next</span>\n            </button>\n        </div>\n    </div>\n</section>",
-          "_cid": "uHe5hMcSff",
-          "_anchor": "people02-k",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = \"video\")": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".btn": {
-              "padding": "1rem 2rem"
-            },
-            ".content-head": {
-              "max-width": "800px"
-            },
-            ".item-wrapper": {
-              ".mbr-iconfont": {
-                "margin": "auto",
-                "display": "inline-flex",
-                "font-size": "2rem",
-                "color": "@iconColor",
-                "width": "40px",
-                "justify-content": "center",
-                "align-items": "center"
-              }
-            },
-            ".card-title, .iconfont-wrapper": {
-              "color": "#000000"
-            },
-            ".card-text": {
-              "color": "#232323"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#a6a99c"
-            },
-            ".mbr-section-title": {
-              "color": "#000000"
-            }
-          },
-          "_name": "people02",
-          "_sourceTheme": "rangem5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people02\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"6\">2</option>\n\t\t\t<option value=\"4\" selected>3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Icon\" name=\"showTitleIcon\" condition=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n\n\t\t<header>Card</header>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Name\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Stars\" name=\"showStars\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#ffffff\" selected condition=\"showStars\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/rangem5/components/_images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/rangem5/components/_images/background4.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row mb-5 justify-content-center\" mbr-if=\"showMainTitle || showMainSubtitle\">\n\t\t\t<div class=\"col-12 content-head\" mbr-class=\"{'col-lg-9': cardsAmount == '3'}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\t<b>Reviews</b></h3>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">This is how we got rated</h5>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t\n\t\t\t\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5 active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tGoogle review</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tInterns</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} mb-5\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<div class=\"iconfont-wrapper mb-3\" mbr-if=\"showStars\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mobi-mbri-star mobi-mbri\" style=\"color: rgb(255, 235, 105); fill: rgb(255, 235, 105);\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet nulla vel, consectetur massa adipiscing.\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\tTrip advisor</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row mt-0 mt-md-5\">\n\t\t\t<div class=\"col-12 align-center\" mbr-if=\"showButtons\">\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Read More</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "uSgHEZ84qx",
-          "_anchor": "people02-8r",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
             ".bg-facebook when (@facebook)": {
               "background": "#1778f2",
               "color": "contrast(#1778f2)",
@@ -2435,223 +2462,15 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "color": "#000000"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            ".mbr-section-subtitle": {
-              "color": "#000000"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "text-align": "center"
-            },
-            ".mbr-text, .item .mbr-section-btn": {
-              "text-align": "left"
-            },
-            ".item-wrapper": {
-              "background": "@cardbg",
-              "margin-bottom": "2rem",
-              "padding": "2.25rem",
-              "@media (min-width: 992px) and (max-width: 1200px)": {
-                "padding": "2rem 1.5rem",
-                "margin-bottom": "2rem"
-              },
-              "@media (max-width: 767px)": {
-                "padding": "2rem 1.5rem",
-                "margin-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "list05",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list05\" group=\"List\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Question\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#edefeb\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"col-12 mb-5 content-head\" mbr-if=\"showMainTitle || showMainSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>Frequently Asked Questions</b></h3>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">Find answers to your questions about FIGY Travel Foundation and our volunteer programs in Mwanza, Tanzania.</h5>\n        </div>\n        <div class=\"row justify-content-center \">\n            <div class=\" col-12 col-lg-{{textWidth}}\">\n                <div class=\"item features-without-image col-12 active\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is FIGY Travel Foundation?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            FIGY Travel Foundation is a volunteer travel foundation that provides opportunities for people to volunteer in Mwanza, Tanzania through volunteer programs.\n                        </p>\n                    </div>\n                </div>\n                <div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is the purpose of FIGY Travel Foundation?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">The purpose of FIGY Travel Foundation is to make a difference in Tanzania by getting more people involved in volunteering and helping to shape the future of the community through one of our programs.</p>\n                    </div>\n                </div>\n                <div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What type of programs does FIGY Travel Foundation offer?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            After the photoshoot, I will provide you with a private online gallery where you can view\n                            and download your edited photos. You'll receive a password-protected link that you can share\n                            with friends and family.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>Who can participate in FIGY Travel Foundation programs?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            Anyone who is interested in volunteering and making a difference in Tanzania can participate in FIGY Travel programs. We also offer internship programs for Universities. Contact us through the application form.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>How long are the FIGY TravelFoundation programs?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is included in a FIGY Travel Foundation program?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>How can I apply for a FIGY Travel Foundation program?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is included in a FIGY Travel Foundation program?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is excluded in a FIGY Travel Foundation program?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>Is prior teaching experience required for FIGY Travel Foundation Teaching program?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            Prior teaching experience is not required for the teaching volunteer program, but some experience or affinity may be helpful.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>What is the relationship between FIGY Travel Foundation and Stichting Support School Fees?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            FIGY Travel Foundation and Stichting Support School Fees have a strong and collaborative relationship, aimed at providing support and assistance to the local communities in the Sengerema District of Tanzania. FIGY Travel was founded to enhance the resources of its partner foundation and provide additional funding sources through affordable volunteer programs. These programs allow volunteers to assist in areas such as teaching, healthcare and agriculture, while experiencing life in the local community in a safe and enriching environment. By participating in FIGY Travel's programs, volunteers can make a significant impact on the lives of those in need. The profits from these experiences are reinvested directly back into the schools where volunteers serve as teaching assistants and into other social projects. Through the efforts of FIGY Travel and Stichting Support School Fees, the two organizations have been able to sponsor 276 children and teachers, donate over 2,400 goods, and place 3 water wells. With the help of our volunteers, we believe that we can make even greater positive change in the lives of those in the Sengerema District in Tanzania.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>How does FIGY Travel Foundation differ from other volunteer travel organizations?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            At FIGY Travel, we strive to offer the most impactful, affordable and authentic volunteer travel experiences to young people around the world. Unlike other organizations, we have a unique partnership with our partner foundation, Stichting Support School Fees, which allows us to have a direct impact on the communities we serve in the Sengerema District of Tanzania. Additionally, we provide our volunteers with the opportunity to fully immerse themselves in the local culture, participate in cultural activities and even add on a Safari tour or visit to the beautiful island of Zanzibar. Our goal is to offer a holistic travel experience that allows our volunteers to make a meaningful impact, learn about new cultures, and have unforgettable memories.\n                        </p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>How is the cost of FIGY Travel Foundation trips kept affordable while still providing guests with quality experiences and support?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">At FIGY Travel, we understand the importance of affordability and quality. That's why we work with small local suppliers to keep the cost of our trips low. By partnering with these local suppliers, we are able to provide our guests with authentic experiences while supporting local businesses and keeping the cost of our trips below that charged by large international tourist organizations. Additionally, we believe that the profits earned from our trips should be reinvested directly back into the communities where our volunteers work, which is why we have partnered with our partner foundation, Stichting Support School Fees. Through this partnership, we are able to provide our guests with quality experiences and support while making a meaningful impact on the local communities in Tanzania.</p>\n                    </div>\n                </div><div class=\"item features-without-image col-12\">\n                    <div class=\"item-wrapper\">\n                        <h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title\" mbr-theme-style=\"display-5\"><b>Can volunteers choose to focus their efforts in specific areas such as teaching, healthcare, or agriculture?</b></h5>\n                        <p class=\"mbr-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".mbr-text, .item .mbr-section-btn\" mbr-theme-style=\"display-7\">\n                            At FIGY Travel, we strive to offer the most impactful, affordable and authentic volunteer travel experiences to young people around the world. Unlike other organizations, we have a unique partnership with our partner foundation, Stichting Support School Fees, which allows us to have a direct impact on the communities we serve in the Sengerema District of Tanzania. Additionally, we provide our volunteers with the opportunity to fully immerse themselves in the local culture, participate in cultural activities and even add on a Safari tour or visit to the beautiful island of Zanzibar. Our goal is to offer a holistic travel experience that allows our volunteers to make a meaningful impact, learn about new cultures, and have unforgettable memories.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "uGVDrWGeUL",
-          "_anchor": "list05-6",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "testimonials2",
-          "_sourceTheme": "successm4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"carousel slide testimonials-slider testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n\n    <mbr-parameters>\n        \n        <header>Size</header>\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <header>Slider</header>\n        <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconbgColor\" value=\"#f7e4d6\" selected>\n        <input type=\"checkbox\" title=\"Show Arrows\" name=\"showArrows\" checked>\n        <input type=\"color\" title=\"Arrow Color\" name=\"arrowsColor\" value=\"#0088ff\" condition=\"showArrows\">\n        <input type=\"range\" title=\"Arrow Size\" name=\"arrowsSize\" value=\"7\" min=\"1\" max=\"10\" step=\"1\" condition=\"showArrows\">\n        <input type=\"checkbox\" title=\"Show Dots\" name=\"dots\" checked>\n        <input type=\"color\" title=\"Dots Color\" name=\"dotsColor\" value=\"#000000\" condition=\"dots\">\n        <input type=\"color\" title=\"Dots Color Active\" name=\"dotsColorActive\" value=\"#000000\" condition=\"dots\">\n        <input type=\"range\" title=\"Dots Opacity\" name=\"dotsOpacity\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"dots\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/successm4/components/_images/background7.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/successm4/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n        \n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <div class=\"carousel slide\" data-ride=\"carousel\" data-bs-ride=\"carousel\" role=\"listbox\">\n            <ol class=\"carousel-indicators\" mbr-if=\"dots\">\n                <li data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\">\n                    <svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"1\" data-bs-slide-to=\"1\" mbr-if=\"testimonialsSlides > 1\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"2\" data-bs-slide-to=\"2\" mbr-if=\"testimonialsSlides > 2\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"3\" data-bs-slide-to=\"3\" mbr-if=\"testimonialsSlides > 3\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"4\" data-bs-slide-to=\"4\" mbr-if=\"testimonialsSlides > 4\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"5\" data-bs-slide-to=\"5\" mbr-if=\"testimonialsSlides > 5\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"6\" data-bs-slide-to=\"6\" mbr-if=\"testimonialsSlides > 6\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"7\" data-bs-slide-to=\"7\" mbr-if=\"testimonialsSlides > 7\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"8\" data-bs-slide-to=\"8\" mbr-if=\"testimonialsSlides > 8\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"9\" data-bs-slide-to=\"9\" mbr-if=\"testimonialsSlides > 9\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"10\" data-bs-slide-to=\"10\" mbr-if=\"testimonialsSlides > 10\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"11\" data-bs-slide-to=\"11\" mbr-if=\"testimonialsSlides > 11\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"12\" data-bs-slide-to=\"12\" mbr-if=\"testimonialsSlides > 12\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"13\" data-bs-slide-to=\"13\" mbr-if=\"testimonialsSlides > 13\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"14\" data-bs-slide-to=\"14\" mbr-if=\"testimonialsSlides > 14\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"15\" data-bs-slide-to=\"15\" mbr-if=\"testimonialsSlides > 15\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"16\" data-bs-slide-to=\"16\" mbr-if=\"testimonialsSlides > 16\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"17\" data-bs-slide-to=\"17\" mbr-if=\"testimonialsSlides > 17\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"18\" data-bs-slide-to=\"18\" mbr-if=\"testimonialsSlides > 18\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n                <li data-slide-to=\"19\" data-bs-slide-to=\"19\" mbr-if=\"testimonialsSlides > 19\"><svg class=\"qodef-svg-circle\">\n                        <circle cx=\"50%\" cy=\"50%\" r=\"45%\"></circle>\n                    </svg></li>\n            </ol>\n            <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people11.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">Briana Scott\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people12.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">George Malone\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people10.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">David Tate\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <div class=\"col-md-12 col-lg-12\">\n                        <div class=\"author-box\">\n                            <div class=\"img-box\">\n                                <img class=\"face\" src=\"@PROJECT_PATH@/assets/images/people9.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-bold align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">What People Say</h1>\n                        <h3 class=\"mbr-section-subtitle align-center align-center mbr-regular pb-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h3>\n                        <p class=\"mbr-text mbr-regular align-center mbr-fonts-style box\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie euismod.\n                            Facilisis\n                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Donec\n                            ultrices\n                            enim lectus, nec volutpat lorem scelerisque eu.</p>\n                        <div class=\"author mbr-m-auto\">\n                            <h3 class=\"mbr-semibold pb-0 mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\">Sophia Neal\n                            </h3>\n                            <h4 class=\"mbr-semibold mbr-fonts-style mbr-bottom\" data-app-selector=\".mbr-bottom\" mbr-theme-style=\"display-7\">Client</h4>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-controls\" mbr-if=\"showArrows\">\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n                    <span aria-hidden=\"true\" class=\"mbr-iconfont mobi-mbri-left mobi-mbri\"></span>\n                    <span class=\"sr-only visually-hidden\">Previous</span>\n                </a>\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n                    <span aria-hidden=\"true\" class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span>\n                    <span class=\"sr-only visually-hidden\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "((@paddingBottom + 5px) * 15px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
-            },
-            ".carousel-item": {
-              "padding": "0 10%",
-              "justify-content": "center",
-              "-webkit-justify-content": "center"
-            },
-            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
-              "display": "flex"
-            },
-            ".img-box": {
-              "position": "relative",
-              "width": "fit-content",
-              "margin": "auto"
-            },
-            ".carousel-controls .mbr-iconfont": {
-              "font-family": "Moririse2 !important",
-              "font-size": "1rem",
-              "font-weight": "900",
-              "transition": "opacity .3s"
-            },
-            ".carousel-controls": {
-              "a": {
-                "transition": "all .3s",
-                "border-radius": "50%",
-                "border": "none",
-                "background-color": "transparent",
-                "span": {
-                  "color": "@arrowsColor !important",
-                  "font-size": "(@arrowsSize * 5px) !important"
-                },
-                "&:hover": {
-                  ".mobi-mbri-left": {
-                    "transform": "translateX(-5px)"
-                  },
-                  ".mobi-mbri-right": {
-                    "transform": "translateX(5px)"
-                  }
-                }
-              },
-              ".carousel-control-next, .carousel-control-prev": {
-                "opacity": "1",
-                "width": "44px",
-                "height": "44px"
-              },
-              ".carousel-control-next": {
-                "bottom": "auto",
-                "top": "44%"
-              },
-              ".carousel-control-prev": {
-                "bottom": "auto",
-                "top": "44%"
-              }
-            },
-            ".author-box": {
-              "margin-bottom": "14px",
-              "display": "flex",
-              "flex-direction": "column",
-              "justify-content": "center"
-            },
-            ".face": {
-              "width": "130px",
-              "height": "130px",
-              "border-radius": "100%",
-              "box-shadow": "none",
-              "margin": "0rem",
-              "object-fit": "cover"
-            },
-            ".author": {
-              "margin": "auto 0"
-            },
-            ".mbr-text": {
-              "margin-bottom": "34px !important"
-            },
-            "h3, h4": {
-              "margin": "0",
-              "padding": "0"
-            },
-            ".mbr-bottom": {
-              "color": "#767676"
-            },
-            ".box": {
-              "margin-left": "auto",
-              "margin-right": "auto",
-              "max-width": "800px!important"
-            },
-            "@media (max-width: 992px)": {
-              ".carousel-controls": {
-                "a": {
-                  "span": {
-                    "bottom": "auto",
-                    "top": "30%"
-                  }
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".carousel-controls": {
-                "a": {
-                  "span": {
-                    "bottom": "auto",
-                    "top": "20%"
-                  }
-                }
-              }
-            },
-            ".carousel-indicators": {
-              "bottom": "-65px",
-              "@media (max-width: 786px)": {
-                "bottom": "-75px"
-              }
-            },
-            ".carousel-indicators li": {
-              "margin-right": "31px",
-              "margin-left": "31px",
-              "opacity": "(@dotsOpacity * 0.1)",
-              "width": "6px",
-              "height": "6px",
-              "max-width": "6px",
-              "max-height": "6px",
-              "min-width": "6px",
-              "min-height": "6px",
-              "background": "@dotsColor",
-              "border": "none",
-              "position": "relative",
-              "transition": "0.3s",
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "center",
-              "border-radius": "50%",
-              "&:hover": {
-                "opacity": "1 !important"
-              },
-              "& svg": {
-                "position": "absolute",
-                "display": "block",
-                "width": "36px",
-                "height": "36px",
-                "z-index": "1",
-                "fill": "none",
-                "color": "@dotsColorActive",
-                "stroke": "none",
-                "overflow": "visible",
-                "& circle": {
-                  "stroke-dasharray": "110",
-                  "stroke-dashoffset": "110",
-                  "stroke": "@dotsColorActive",
-                  "stroke-width": "1",
-                  "transition": "all 0.6s cubic-bezier(0.43, 0.41, 0.36, 0.9)",
-                  "transform": "rotate(-145deg)",
-                  "transform-origin": "center"
-                }
-              }
-            },
-            ".carousel-indicators li.active": {
-              "background": "@dotsColorActive",
-              "& circle": {
-                "stroke-dashoffset": "0",
-                "transform": "rotate(55deg)"
-              }
-            },
-            ".mbr-section-title": {
-              "margin-bottom": "2rem"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "center"
             },
             ".mbr-fallback-image.disabled": {
               "display": "none"
@@ -2667,10 +2486,94 @@
               "& when (@bg-type = 'video')": {
                 "background-image": "url(@fallBackImage)"
               }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 80px",
+                "@media (max-width: 1200px)": {
+                  "padding": "0 40px"
+                },
+                "@media (max-width: 992px)": {
+                  "padding": "0 22px"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 22px"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".title-wrapper": {
+              ".mbr-section-title": {
+                "margin-bottom": "40px",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "20px"
+                }
+              }
+            },
+            ".panel-group": {
+              ".card": {
+                "border-radius": "0 !important",
+                ".card-header": {
+                  "background-color": "transparent",
+                  "border": "none",
+                  "border-bottom": "1px solid @border",
+                  "border-radius": "0",
+                  "padding": "20px",
+                  ".panel-title": {
+                    "display": "flex",
+                    "justify-content": "space-between",
+                    "align-items": "center",
+                    "width": "100%",
+                    ".panel-title-edit": {
+                      "margin-bottom": "0"
+                    },
+                    ".mbr-iconfont": {
+                      "font-size": "18px",
+                      "width": "18px",
+                      "height": "18px",
+                      "min-width": "18px",
+                      "margin-bottom": "0",
+                      "transition": "all 0.3s ease-in-out",
+                      "color": "@icon",
+                      "margin-left": "16px"
+                    },
+                    "&:not(.collapsed)": {
+                      ".mbr-iconfont": {
+                        "transform": "rotate(180deg)"
+                      }
+                    }
+                  }
+                },
+                ".panel-collapse": {
+                  ".panel-body": {
+                    "padding": "15px 25px",
+                    ".panel-text": {
+                      "margin-bottom": "0"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".panel-title-edit": {
+              "color": "#232323"
+            },
+            ".panel-text": {
+              "color": "#757b62"
             }
           },
-          "_cid": "uSgMZN8UMf",
-          "_anchor": "testimonials2-95",
+          "_name": "list01",
+          "_sourceTheme": "essencem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list01 essencem5\" group=\"List\" plugins=\"mbr-switch-arrow, mobirise-icons2\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>List</header>\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"color\" title=\"Icon Color\" value=\"#000000\" name=\"icon\" selected>\n        <input type=\"color\" title=\"Border Color\" value=\"#000000\" name=\"border\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        <b>FAQ FOR THE VOLUNTEER INTERNSHIP COMMUNITY</b>\n                    </h2>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-10\">\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is FIGY Travel Foundation?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    FIGY Travel Foundation is a volunteer travel foundation that provides opportunities for people to volunteer in Mwanza, Tanzania through volunteer programs.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is the purpose of FIGY Travel Foundation?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The purpose of FIGY Travel Foundation is to make a difference in Tanzania by getting more people involved in volunteering and helping to shape the future of the community through one of our programs.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What type of programs does FIGY Travel Foundation offer?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    After the photoshoot, I will provide you with a private online gallery where you can view and download your edited photos. You'll receive a password-protected link that you can share with friends and family.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>Who can participate in FIGY Travel Foundation programs?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Anyone who is interested in volunteering and making a difference in Tanzania can participate in FIGY Travel programs. We also offer internship programs for Universities. Contact us through the application form.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>How long are the FIGY TravelFoundation programs?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingSix\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is included in a FIGY Travel Foundation program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingSix\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uSgP8EBeiY",
+          "_anchor": "list01-9c",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -2780,17 +2683,137 @@
               "text-align": "center"
             },
             ".panel-title-edit": {
-              "color": "#ffffff"
+              "color": "#232323"
             },
             ".panel-text": {
-              "color": "#ffffff"
+              "color": "#a6a99c"
             }
           },
           "_name": "list01",
           "_sourceTheme": "essencem5",
-          "_customHTML": "<section data-bs-version=\"5.1\"\r\n        class=\"list01 essencem5\"\r\n        group=\"List\"\r\n        plugins=\"mbr-switch-arrow, mobirise-icons2\"\r\n        mbr-class=\"{\r\n    'mbr-fullscreen': fullScreen,\r\n    'mbr-parallax-background': bg.parallax}\"\r\n>\r\n    <mbr-parameters>\r\n        <header>Size</header>\r\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\"/>\r\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\"/>\r\n        <input\r\n                type=\"range\"\r\n                inline\r\n                title=\"Top\"\r\n                name=\"paddingTop\"\r\n                min=\"0\"\r\n                max=\"12\"\r\n                step=\"1\"\r\n                value=\"5\"\r\n                condition=\"fullScreen == false\"\r\n        />\r\n        <input\r\n                type=\"range\"\r\n                inline\r\n                title=\"Bottom\"\r\n                name=\"paddingBottom\"\r\n                min=\"0\"\r\n                max=\"12\"\r\n                step=\"1\"\r\n                value=\"5\"\r\n                condition=\"fullScreen == false\"\r\n        />\r\n        <header>Show/Hide</header>\r\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked/>\r\n        <header>List</header>\r\n        <select title=\"Amount\" name=\"cardAmount\">\r\n            <option value=\"1\">1</option>\r\n            <option value=\"2\">2</option>\r\n            <option value=\"3\">3</option>\r\n            <option value=\"4\">4</option>\r\n            <option value=\"5\">5</option>\r\n            <option value=\"6\" selected>6</option>\r\n        </select>\r\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"icon\" selected/>\r\n        <input type=\"color\" title=\"Border Color\" value=\"#dadada\" name=\"border\" selected/>\r\n        <header>Background</header>\r\n        <fieldset type=\"background\" name=\"bg\" parallax>\r\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\"/>\r\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected/>\r\n        </fieldset>\r\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\r\n        <input\r\n                type=\"image\"\r\n                title=\"Fallback Image\"\r\n                value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\"\r\n                name=\"fallBackImage\"\r\n                condition=\"bg.type === 'video'\"\r\n        />\r\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\"/>\r\n        <input\r\n                type=\"color\"\r\n                title=\"Overlay Color\"\r\n                name=\"overlayColor\"\r\n                value=\"#000000\"\r\n                condition=\"overlay && bg.type !== 'color'\"\r\n        />\r\n        <input\r\n                type=\"range\"\r\n                inline\r\n                title=\"Opacity\"\r\n                name=\"overlayOpacity\"\r\n                min=\"0\"\r\n                max=\"1\"\r\n                step=\"0.1\"\r\n                value=\"0.8\"\r\n                condition=\"overlay && bg.type !== 'color'\"\r\n        />\r\n    </mbr-parameters>\r\n\r\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\r\n    <div\r\n            class=\"mbr-overlay\"\r\n            mbr-if=\"overlay && bg.type !== 'color'\"\r\n            opacity=\"{{overlayOpacity}}\"\r\n            bg-color=\"{{overlayColor}}\"\r\n    ></div>\r\n\r\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\r\n        <div class=\"row\">\r\n            <div class=\"col-12 col-lg-10\">\r\n                <div class=\"title-wrapper\">\r\n                    <h2 class=\"mbr-section-title mbr-fonts-style\"\r\n                        data-app-selector=\".mbr-section-title\"\r\n                        mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\r\n                        <b>FAQ FOR THE ENVIRONMENTAL COMMUNITY</b>\r\n                    </h2>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-12 col-lg-10\">\r\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\"\r\n                     aria-multiselectable=\"true\">\r\n                    <div class=\"card\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>What is the environmental community?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    The environmental community consists of individuals, organizations, and initiatives\r\n                                    dedicated to promoting environmental conservation, sustainability, and awareness. It\r\n                                    includes environmentalists, activists, scientists, and concerned citizens working\r\n                                    towards a healthier planet.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>How can I get involved in the environmental community?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    You can get involved by joining local environmental groups, volunteering for\r\n                                    environmental projects, supporting eco-friendly initiatives, and staying informed\r\n                                    about environmental issues. Attend events, participate in clean-up activities, and\r\n                                    engage with like-minded individuals.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>What are some simple actions I can take to help the environment?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    Reduce, reuse, and recycle. Conserve energy, water, and resources. Choose\r\n                                    sustainable products and practices. Plant trees, support clean energy, and minimize\r\n                                    your carbon footprint. Small individual actions collectively make a significant\r\n                                    impact.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFour\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>What is climate change, and how does it affect the environment?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    Climate change refers to long-term changes in temperature, precipitation, and other\r\n                                    atmospheric conditions on Earth. It is largely driven by human activities, such as\r\n                                    burning fossil fuels and deforestation, leading to global warming. Climate change\r\n                                    impacts include rising sea levels, extreme weather events, and threats to\r\n                                    biodiversity.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFive\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>How can I support renewable energy?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    Support policies promoting renewable energy sources like solar and wind power.\r\n                                    Invest in clean energy initiatives, use renewable energy in your home, and advocate\r\n                                    for sustainable energy practices. Being energy-efficient also contributes to\r\n                                    reducing the demand for fossil fuels.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\r\n                        <div class=\"card-header\" role=\"tab\" id=\"headingSix\">\r\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core\r\n                               href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\r\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\"\r\n                                    data-app-selector=\".panel-title-edit\">\r\n                                    <b>What is the importance of biodiversity?</b>\r\n                                </h4>\r\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\r\n                            </a>\r\n                        </div>\r\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\"\r\n                             aria-labelledby=\"headingSix\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\r\n                            <div class=\"panel-body\">\r\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\"\r\n                                   data-app-selector=\".panel-text\">\r\n                                    Biodiversity, the variety of life on Earth, is crucial for ecosystem stability. It\r\n                                    supports ecosystem services, such as pollination, water purification, and disease\r\n                                    control. Protecting biodiversity is essential for food security, medicine, and the\r\n                                    overall health of our planet.\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n",
-          "_cid": "uSgP8EBeiY",
-          "_anchor": "list01-9c",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list01 essencem5\" group=\"List\" plugins=\"mbr-switch-arrow, mobirise-icons2\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <header>List</header>\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"icon\" selected>\n        <input type=\"color\" title=\"Border Color\" value=\"#a6a99c\" name=\"border\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        <b>FAQ FOR THE ENVIRONMENTAL COMMUNITY</b>\n                    </h2>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-10\">\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>How can I apply for a FIGY Travel Foundation program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is included in a FIGY Travel Foundation program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What type of programs does FIGY Travel Foundation offer?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    After the photoshoot, I will provide you with a private online gallery where you can view and download your edited photos. You'll receive a password-protected link that you can share with friends and family.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is excluded in a FIGY Travel Foundation program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>Is prior teaching experience required for FIGY Travel Foundation Teaching program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Prior teaching experience is not required for the teaching volunteer program, but some experience or affinity may be helpful.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingSix\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is the relationship between FIGY Travel Foundation and Stichting Support School Fees?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingSix\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    FIGY Travel Foundation and Stichting Support School Fees have a strong and collaborative relationship, aimed at providing support and assistance to the local communities in the Sengerema District of Tanzania. FIGY Travel was founded to enhance the resources of its partner foundation and provide additional funding sources through affordable volunteer programs. These programs allow volunteers to assist in areas such as teaching, healthcare and agriculture, while experiencing life in the local community in a safe and enriching environment. By participating in FIGY Travel's programs, volunteers can make a significant impact on the lives of those in need. The profits from these experiences are reinvested directly back into the schools where volunteers serve as teaching assistants and into other social projects. Through the efforts of FIGY Travel and Stichting Support School Fees, the two organizations have been able to sponsor 276 children and teachers, donate over 2,400 goods, and place 3 water wells. With the help of our volunteers, we believe that we can make even greater positive change in the lives of those in the Sengerema District in Tanzania.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "list01-br",
+          "_cid": "uSxN8ZYEm8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 80px",
+                "@media (max-width: 1200px)": {
+                  "padding": "0 40px"
+                },
+                "@media (max-width: 992px)": {
+                  "padding": "0 22px"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 22px"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".title-wrapper": {
+              ".mbr-section-title": {
+                "margin-bottom": "40px",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "20px"
+                }
+              }
+            },
+            ".panel-group": {
+              ".card": {
+                "border-radius": "0 !important",
+                ".card-header": {
+                  "background-color": "transparent",
+                  "border": "none",
+                  "border-bottom": "1px solid @border",
+                  "border-radius": "0",
+                  "padding": "20px",
+                  ".panel-title": {
+                    "display": "flex",
+                    "justify-content": "space-between",
+                    "align-items": "center",
+                    "width": "100%",
+                    ".panel-title-edit": {
+                      "margin-bottom": "0"
+                    },
+                    ".mbr-iconfont": {
+                      "font-size": "18px",
+                      "width": "18px",
+                      "height": "18px",
+                      "min-width": "18px",
+                      "margin-bottom": "0",
+                      "transition": "all 0.3s ease-in-out",
+                      "color": "@icon",
+                      "margin-left": "16px"
+                    },
+                    "&:not(.collapsed)": {
+                      ".mbr-iconfont": {
+                        "transform": "rotate(180deg)"
+                      }
+                    }
+                  }
+                },
+                ".panel-collapse": {
+                  ".panel-body": {
+                    "padding": "15px 25px",
+                    ".panel-text": {
+                      "margin-bottom": "0"
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".panel-title-edit": {
+              "color": "#232323"
+            },
+            ".panel-text": {
+              "color": "#a6a99c"
+            }
+          },
+          "_name": "list01",
+          "_sourceTheme": "essencem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list01 essencem5\" group=\"List\" plugins=\"mbr-switch-arrow, mobirise-icons2\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <header>List</header>\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"icon\" selected>\n        <input type=\"color\" title=\"Border Color\" value=\"#232323\" name=\"border\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/essencem5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        <b>FAQ FOR THE ENVIRONMENTAL COMMUNITY</b>\n                    </h2>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-10\">\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>How does FIGY Travel Foundation differ from other volunteer travel organizations?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    At FIGY Travel, we strive to offer the most impactful, affordable and authentic volunteer travel experiences to young people around the world. Unlike other organizations, we have a unique partnership with our partner foundation, Stichting Support School Fees, which allows us to have a direct impact on the communities we serve in the Sengerema District of Tanzania. Additionally, we provide our volunteers with the opportunity to fully immerse themselves in the local culture, participate in cultural activities and even add on a Safari tour or visit to the beautiful island of Zanzibar. Our goal is to offer a holistic travel experience that allows our volunteers to make a meaningful impact, learn about new cultures, and have unforgettable memories.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>How is the cost of FIGY Travel Foundation trips kept affordable while still providing guests with quality experiences and support?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    At FIGY Travel, we understand the importance of affordability and quality. That's why we work with small local suppliers to keep the cost of our trips low. By partnering with these local suppliers, we are able to provide our guests with authentic experiences while supporting local businesses and keeping the cost of our trips below that charged by large international tourist organizations. Additionally, we believe that the profits earned from our trips should be reinvested directly back into the communities where our volunteers work, which is why we have partnered with our partner foundation, Stichting Support School Fees. Through this partnership, we are able to provide our guests with quality experiences and support while making a meaningful impact on the local communities in Tanzania.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>Can volunteers choose to focus their efforts in specific areas such as teaching, healthcare, or agriculture?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    At FIGY Travel, we strive to offer the most impactful, affordable and authentic volunteer travel experiences to young people around the world. Unlike other organizations, we have a unique partnership with our partner foundation, Stichting Support School Fees, which allows us to have a direct impact on the communities we serve in the Sengerema District of Tanzania. Additionally, we provide our volunteers with the opportunity to fully immerse themselves in the local culture, participate in cultural activities and even add on a Safari tour or visit to the beautiful island of Zanzibar. Our goal is to offer a holistic travel experience that allows our volunteers to make a meaningful impact, learn about new cultures, and have unforgettable memories.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is excluded in a FIGY Travel Foundation program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>Is prior teaching experience required for FIGY Travel Foundation Teaching program?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Prior teaching experience is not required for the teaching volunteer program, but some experience or affinity may be helpful.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingSix\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\"><b>What is the relationship between FIGY Travel Foundation and Stichting Support School Fees?</b></h4>\n                                <span class=\"sign mbr-iconfont mobi-mbri-arrow-down mobi-mbri\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingSix\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    The length of a FIGY Travel program depends on the specific program, but they typically last from a few weeks to several months.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "list01-bs",
+          "_cid": "uSxOkOX0Pn",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
