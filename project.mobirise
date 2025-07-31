@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "figy.travel-clone",
-    "currentPage": "index.html",
+    "currentPage": "page4.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 425,
+    "uniqCompNum": 428,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -4185,12 +4185,12 @@
           "_params": {}
         },
         {
-          "_name": "article03",
-          "_sourceTheme": "walletm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article03 walletm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#f5f8ff\" name=\"labelBorder\" condition=\"showLabel\" selected>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Container BG\" value=\"#ffffff\" name=\"containerBg\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/walletm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/walletm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"card-wrapper\">\n                    <div class=\"content-wrapper\">\n                        <div class=\"label-wrapper\">\n                            <p class=\"mbr-label mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\" data-app-selector=\".mbr-label, .label-wrapper\">\n                                About us</p>\n                        </div>\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn, .title-wrapper\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                            <b>Who we are</b></h2>\n                        <div class=\"text-wrapper\">\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">At FIGY Travel Foundation , we enable people from all walks of life to have the opportunity to make a positive life-changing impact in rural communities in the beautiful African country of Tanzania through volunteering programs. Our programs are the most affordable and sustainable way to immerse yourself in new cultures, connect with like-minded international volunteers and make a difference through work and travel.\n<br>\n<br>If you ever wanted to make a real impact in a time of need, this is your time and place to fill that gap on the mother continent. Volunteer in Tanzania at an affordable price with FIGY Travel, including accommodation in one of our beautiful lodges on the shores of Lake Victoria, Africa’s largest lake, meals, 24/7 in-country support, and more.\n<br>\n<br>Visit the vast plains of the Serengeti national park with its awe-inspiring wildlife in our optional add-on safari experiences with local guides and drivers available at a much lower price than with the big commercial tour operators. End your stay in Tanzania with a vacation on the fascinating island of Zanzibar and visit the capital Stone Town, a historic Swahili coastal trading settlement and UNESCO world heritage site, as well as the stunning Indian Ocean golden beaches with their laid-back chill-out vibe.\n<br>‍</p>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn main-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Read more\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -4212,81 +4212,19 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".card-wrapper": {
-              "position": "relative",
-              "background-color": "@containerBg",
-              "padding": "160px 64px",
-              "margin": "6px 0",
-              "display": "flex",
-              "justify-content": "center",
-              "@media (max-width: 1440px)": {
-                "padding": "64px"
-              },
-              "@media (max-width: 992px)": {
-                "padding": "48px 24px",
-                "margin": "3px 0"
-              },
-              ".content-wrapper": {
-                "width": "70%",
-                "@media (max-width: 1540px)": {
-                  "width": "100%"
-                },
-                "& when not (@fullWidth)": {
-                  "width": "100%"
-                },
-                ".label-wrapper": {
-                  ".mbr-label": {
-                    "display": "inline-flex",
-                    "padding": "6px 20px",
-                    "border": "1px solid @labelBorder",
-                    "margin-bottom": "54px",
-                    "@media (max-width: 1440px)": {
-                      "margin-bottom": "24px"
-                    }
-                  }
-                },
-                ".mbr-section-title": {
-                  "margin-bottom": "84px",
-                  "@media (max-width: 1440px)": {
-                    "margin-bottom": "24px"
-                  }
-                },
-                ".text-wrapper": {
-                  ".mbr-text": {
-                    "margin-bottom": "0"
-                  }
-                },
-                ".mbr-section-btn": {
-                  "margin-top": "48px",
-                  "@media (max-width: 1440px)": {
-                    "margin-top": "24px"
-                  },
-                  ".btn": {
-                    "margin-bottom": "0"
-                  }
-                }
-              }
-            },
-            ".mbr-label, .label-wrapper": {
-              "color": "#000000",
-              "text-align": "center"
-            },
             ".mbr-section-title": {
-              "color": "#f5f8ff"
+              "color": "#232323"
             },
-            ".mbr-text, .text-wrapper": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "center"
-            },
-            ".mbr-section-title, .mbr-section-btn, .title-wrapper": {
-              "color": "#000000"
+            ".mbr-section-subtitle": {
+              "color": "#a6a99c"
             }
           },
-          "_cid": "uSwqyYs0vn",
-          "_anchor": "article03-b4",
+          "_name": "article11",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>About us</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                Become a part of our community</h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Learn more\n                    </a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_anchor": "article11-bv",
+          "_cid": "uSxTpPYd7L",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -4407,12 +4345,12 @@
           "_params": {}
         },
         {
-          "_name": "article03",
-          "_sourceTheme": "walletm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article03 walletm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#f5f8ff\" name=\"labelBorder\" condition=\"showLabel\" selected>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Container BG\" value=\"#ffffff\" name=\"containerBg\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/walletm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/walletm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"card-wrapper\">\n                    <div class=\"content-wrapper\">\n                        <div class=\"label-wrapper\">\n                            <p class=\"mbr-label mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\" data-app-selector=\".mbr-label, .label-wrapper\">\n                                Our philosophy</p>\n                        </div>\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn, .title-wrapper\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>The FIGY Philosophy</b></h2>\n                        <div class=\"text-wrapper\">\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">Fill the Gap Years Travel was founded to do what it says: ‘Fill the Gap,’ whether that is the year before, or after, studying at university, or the emotional gap of wanting to make a positive impact in the world; or bridging the cultural gap and stretching out a helping hand to those  coming from a far less privileged background than yourself. \n<br>\n<br>Our overwhelming priority is the safety of our volunteers and we do everything we can to ensure their security and comfort. Tanzania is generally a safe country for European travellers and FIGY Travel operates in a quiet rural area not far from the second city of Mwanza on the shores of Lake Victoria. Our people on the ground come from the communities in which we operate and support and this deep local knowledge and network is the best guarantee of safety we can provide.  \n<br>\n<br>Our icon is the fig tree, the ancient symbol of wisdom, strength,  abundance and love, that is considered sacred across religions and cultures.<br>‍</p>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn main-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Read more\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -4434,85 +4372,39 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".card-wrapper": {
-              "position": "relative",
-              "background-color": "@containerBg",
-              "padding": "160px 64px",
-              "margin": "6px 0",
-              "display": "flex",
-              "justify-content": "center",
-              "@media (max-width: 1440px)": {
-                "padding": "64px"
-              },
-              "@media (max-width: 992px)": {
-                "padding": "48px 24px",
-                "margin": "3px 0"
-              },
-              ".content-wrapper": {
-                "width": "70%",
-                "@media (max-width: 1540px)": {
-                  "width": "100%"
-                },
-                "& when not (@fullWidth)": {
-                  "width": "100%"
-                },
-                ".label-wrapper": {
-                  ".mbr-label": {
-                    "display": "inline-flex",
-                    "padding": "6px 20px",
-                    "border": "1px solid @labelBorder",
-                    "margin-bottom": "54px",
-                    "@media (max-width: 1440px)": {
-                      "margin-bottom": "24px"
-                    }
-                  }
-                },
-                ".mbr-section-title": {
-                  "margin-bottom": "84px",
-                  "@media (max-width: 1440px)": {
-                    "margin-bottom": "24px"
-                  }
-                },
-                ".text-wrapper": {
-                  ".mbr-text": {
-                    "margin-bottom": "0"
-                  }
-                },
-                ".mbr-section-btn": {
-                  "margin-top": "48px",
-                  "@media (max-width: 1440px)": {
-                    "margin-top": "24px"
-                  },
-                  ".btn": {
-                    "margin-bottom": "0"
-                  }
-                }
-              }
-            },
-            ".mbr-label, .label-wrapper": {
-              "color": "#000000",
-              "text-align": "center"
-            },
             ".mbr-section-title": {
-              "color": "#f5f8ff"
+              "color": "#232323"
             },
-            ".mbr-text, .text-wrapper": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "center"
-            },
-            ".mbr-section-title, .mbr-section-btn, .title-wrapper": {
-              "color": "#000000"
+            ".mbr-section-subtitle": {
+              "color": "#a6a99c"
             }
           },
-          "_anchor": "article03-b5",
-          "_cid": "uSwrspgEAe",
+          "_name": "article11",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>The FIGY Philosophy</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                Become a part of our community</h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Learn more\n                    </a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "article11-bu",
+          "_isUserblock": true,
+          "_cid": "uSxTcaWE3P",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<figure class=\"text-center\">\n  <blockquote class=\"blockquote\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>\n  </blockquote>\n  <figcaption class=\"blockquote-footer\">\n    Someone famous in <cite title=\"Source Title\">Source Title</cite>\n  </figcaption>\n</figure>\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 22px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_params": {},
+          "_anchor": "custom-html-bt"
         },
         {
           "_name": "features02",
