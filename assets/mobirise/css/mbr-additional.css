@@ -4266,6 +4266,58 @@ a {
 .cid-uSwQaakunK .item-text {
   color: #191c25;
 }
+.cid-uSxBgNOsEq {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+}
+.cid-uSxBgNOsEq .mbr-text {
+  color: #000000;
+}
+.cid-uSxBgNOsEq .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-uSxBgNOsEq .mbr-section-title {
+  color: #000000;
+}
+.cid-uSxBgNOsEq .img-wrapper img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uSxBgNOsEq .img-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .cid-uSxBgNOsEq .img-wrapper img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.cid-uSxBgNOsEq .img-wrapper {
+  display: flex;
+}
+.cid-uSxBgNOsEq .card-text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+.cid-uSxBgNOsEq .card-title,
+.cid-uSxBgNOsEq .img-wrapper {
+  text-align: center;
+}
+.cid-uSxBgNOsEq .lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+}
 .cid-uSwrZLrpP2 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -7244,6 +7296,66 @@ a {
 }
 #custom-html-6m ul {
   align: center;
+}
+.cid-uSxB1MOypo {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-uSxB1MOypo .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uSxB1MOypo .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uSxB1MOypo .bg-facebook {
+  background: #1778f2;
+  color: #ffffff;
+}
+.cid-uSxB1MOypo .bg-facebook:hover {
+  background: #0b60cb;
+}
+.cid-uSxB1MOypo .bg-twitter {
+  background: #1da1f2;
+  color: #ffffff;
+}
+.cid-uSxB1MOypo .bg-twitter:hover {
+  background: #0c85d0;
+}
+.cid-uSxB1MOypo .bg-instagram {
+  background: #f00075;
+  color: #ffffff;
+}
+.cid-uSxB1MOypo .bg-instagram:hover {
+  background: #bd005c;
+}
+.cid-uSxB1MOypo .bg-tiktok {
+  background: #000000;
+  color: #ffffff;
+}
+.cid-uSxB1MOypo .bg-tiktok:hover {
+  background: #000000;
+}
+.cid-uSxB1MOypo .iconfont-wrapper {
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.cid-uSxB1MOypo [class^="socicon-"]:before,
+.cid-uSxB1MOypo [class*=" socicon-"]:before {
+  line-height: 55px;
+  padding: .6rem;
 }
 .cid-uKpj6EvDRf {
   padding-top: 2rem;
