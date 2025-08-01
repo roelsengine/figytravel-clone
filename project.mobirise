@@ -4000,10 +4000,12 @@
             },
             ".mbr-text": {
               "margin": "1.5rem 0",
-              "color": "#8d97ad"
+              "color": "#8d97ad",
+              "line-heigth": "2"
             },
             ".mbr-section-subtitle": {
-              "color": "#000000"
+              "color": "#000000",
+              "line-heigth": "2"
             },
             ".card-img": {
               "margin-bottom": "2rem",
@@ -4050,7 +4052,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
@@ -4284,9 +4288,10 @@
               "font-optical-sizing": "auto",
               "font-weight": "400",
               "font-style": "italic",
-              "font-size": "22px",
+              "font-size": "28px",
               "text-align": "center",
-              "line-height": "2"
+              "line-height": "2",
+              "color": "030303"
             }
           },
           "_name": "people07",

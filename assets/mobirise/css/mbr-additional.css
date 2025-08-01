@@ -3691,9 +3691,11 @@ a {
 .cid-uShC1w1dKR .mbr-text {
   margin: 1.5rem 0;
   color: #8d97ad;
+  line-heigth: 2;
 }
 .cid-uShC1w1dKR .mbr-section-subtitle {
   color: #000000;
+  line-heigth: 2;
 }
 .cid-uShC1w1dKR .card-img {
   margin-bottom: 2rem;
@@ -3890,9 +3892,10 @@ a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-size: 22px;
+  font-size: 28px;
   text-align: center;
   line-height: 2;
+  color: 030303;
 }
 .cid-uSwrZLrpP2 {
   padding-top: 0rem;
