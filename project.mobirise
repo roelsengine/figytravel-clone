@@ -4330,7 +4330,8 @@
               "color": "#0f0f0f"
             },
             ".card-text": {
-              "color": "#666666"
+              "color": "#666666",
+              "line-height": "2"
             },
             ".mbr-section-title, .mbr-section-btn": {
               "text-align": "center"
@@ -4341,7 +4342,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_name": "features02",
@@ -4444,7 +4447,8 @@
               "color": "#0f0f0f"
             },
             ".card-text": {
-              "color": "#666666"
+              "color": "#666666",
+              "line-height": "2"
             }
           },
           "_anchor": "features02-b8",
@@ -4452,7 +4456,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_name": "features02",
@@ -4555,7 +4561,8 @@
               "color": "#0f0f0f"
             },
             ".card-text": {
-              "color": "#666666"
+              "color": "#666666",
+              "line-height": "2"
             }
           },
           "_anchor": "features02-b9",
@@ -4563,7 +4570,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_name": "teams1",
