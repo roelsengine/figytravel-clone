@@ -1649,16 +1649,19 @@ a {
 }
 .cid-uSEswEmGyx .mbr-section-title {
   color: #f1f5eb;
+  line-heigth: 12pt ;
 }
 .cid-uSEswEmGyx .mbr-text,
 .cid-uSEswEmGyx .text-wrapper {
-  color: #a6a99c;
+  color: #000000;
   text-align: center;
+  line-heigth: 12pt ;
 }
 .cid-uSEswEmGyx .mbr-section-title,
 .cid-uSEswEmGyx .mbr-section-btn {
   text-align: center;
   color: #232323;
+  line-heigth: 12pt ;
 }
 .cid-uSgWLkxanh {
   padding-top: 1rem;

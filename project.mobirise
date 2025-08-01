@@ -1244,15 +1244,18 @@
               "text-align": "center"
             },
             ".mbr-section-title": {
-              "color": "#f1f5eb"
+              "color": "#f1f5eb",
+              "line-heigth": "12pt "
             },
             ".mbr-text, .text-wrapper": {
-              "color": "#a6a99c",
-              "text-align": "center"
+              "color": "#000000",
+              "text-align": "center",
+              "line-heigth": "12pt "
             },
             ".mbr-section-title, .mbr-section-btn": {
               "text-align": "center",
-              "color": "#232323"
+              "color": "#232323",
+              "line-heigth": "12pt "
             }
           },
           "_name": "header02",
@@ -1263,7 +1266,9 @@
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "header02-c5"
+          "_anchor": "header02-c5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
