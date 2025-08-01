@@ -879,7 +879,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -922,7 +922,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -1246,8 +1246,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -2846,7 +2846,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -2889,7 +2889,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -3213,8 +3213,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -4461,7 +4461,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -4504,7 +4504,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uIxv1fMkZv .nav-item:focus,
@@ -4828,8 +4828,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -5991,7 +5991,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -6034,7 +6034,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uIxj3BlHjN .nav-item:focus,
@@ -6358,8 +6358,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -8377,7 +8377,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -8420,7 +8420,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShqR3YPN7 .nav-item:focus,
@@ -8744,8 +8744,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -9907,7 +9907,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -9950,7 +9950,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShreOA9zm .nav-item:focus,
@@ -10274,8 +10274,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -10606,7 +10606,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -10649,7 +10649,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShrr8bAFH .nav-item:focus,
@@ -10973,8 +10973,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -11305,7 +11305,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -11348,7 +11348,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShrD2xo6F .nav-item:focus,
@@ -11672,8 +11672,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -12004,7 +12004,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -12047,7 +12047,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShrSrxCRr .nav-item:focus,
@@ -12371,8 +12371,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -12703,7 +12703,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -12746,7 +12746,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-radius: 4px !important;
 }
 .cid-uShsR89NGk .nav-item:focus,
@@ -13070,8 +13070,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
