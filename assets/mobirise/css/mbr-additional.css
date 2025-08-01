@@ -4195,6 +4195,23 @@ a {
   color: #666666;
   line-height: 2;
 }
+#custom-html-c0 div {
+  padding: 0px 0;
+  color: #777;
+  text-align: center;
+  background: #000;
+}
+#custom-html-c0 p {
+  font-size: 30px;
+  color: #777;
+}
+#custom-html-c0 .bg-youtube {
+  background: #ff0000;
+  color: #ffffff;
+}
+#custom-html-c0 .bg-youtube:hover {
+  background: #cc0000;
+}
 .cid-uSwVB0sAVw {
   padding-top: 2rem;
   padding-bottom: 3rem;

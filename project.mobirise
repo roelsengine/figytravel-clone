@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 432,
+    "uniqCompNum": 433,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -4644,6 +4644,21 @@
           "_global": false,
           "_once": false,
           "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"fixed-bottom\">\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-youtube socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-facebook socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-instagram socicon\"></span>\n</button>\n    <button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-linkedin socicon\"></span>\n</button>\n\n</div>",
+          "_customCSS": "\ndiv {\n  padding: 0px 0;\n  color: #777;\n  text-align: center;\n    background:#000;\n}\np {\n  font-size: 30px;\n  color: #777;\n}\n.bg-youtube {\n  background: #ff0000;\n  color: contrast(#ff0000);\n  &:hover {\n    background: darken(#ff0000, 10);\n  }\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_anchor": "custom-html-c0",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
