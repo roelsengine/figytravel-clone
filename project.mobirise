@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "figy.travel-clone",
-    "currentPage": "Stage-Tanzania-Faq.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -1276,7 +1276,7 @@
           },
           "_name": "header02",
           "_sourceTheme": "plantm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header02 plantm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"16\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"16\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <p class=\"mbr-label mbr-fonts-style\" data-app-selector=\".mbr-label\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\">\n                        Thoughtful Design\n                    </p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Welcome to Tanzania</h2>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">\n                            We are FIGY Travel Foundation - a Dutch volunteer travel organization based in Amsterdam and established to provide people with the opportunity to assist on a voluntary basis in teaching, healthcare and agriculture in the area of Mwanza, Tanzania, while using their skills and experiencing life in the local community in a safe environment.\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-quote-left mbr-iconfont mbr-iconfont-btn\"></span>\n                            \n                            Get started\n                        </a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header02 plantm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"16\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"16\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/plantm5/components/_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/plantm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <p class=\"mbr-label mbr-fonts-style\" data-app-selector=\".mbr-label\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\">\n                        Thoughtful Design\n                    </p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Welcome to Tanzania</h2>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">\n                            We are FIGY Travel Foundation - a Dutch volunteer travel organization based in Amsterdam and established to provide people with the opportunity to assist on a voluntary basis in teaching, healthcare and agriculture in the area of Mwanza, Tanzania, while using their skills and experiencing life in the local community in a safe environment.\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-quote-left mbr-iconfont mbr-iconfont-btn\"></span>\n                            \n                            Get started\n                        </a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uSEswEmGyx",
           "_protectedParams": [],
           "_global": false,
@@ -2434,7 +2434,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"fixed-bottom\">\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-youtube socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-facebook socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-instagram socicon\"></span>\n</button>\n    <button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-linkedin socicon\"></span>\n</button>\n\n</div>",
+          "_customHTML": "<div class=\"fixed-bottom\">\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-youtube socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-facebook socicon\"></span>\n</button>\n<button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-instagram socicon\"></span>\n</button>\n    <button type=\"button\" class=\"btn btn-dark position-relative \">\n  <span class=\"socicon-linkedin socicon\"></span>\n</button>\n</div>",
           "_customCSS": "\ndiv {\n  padding: 0px 0;\n  color: #777;\n  text-align: center;\n    background:#000;\n}\np {\n  font-size: 30px;\n  color: #777;\n}\n.bg-youtube {\n  background: #ff0000;\n  color: contrast(#ff0000);\n  &:hover {\n    background: darken(#ff0000, 10);\n  }\n}",
           "alias": "code-editor",
           "_tags": [
@@ -2606,90 +2606,6 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".content-wrapper": {
-              ".mbr-label": {
-                "margin-bottom": "80px",
-                "@media (max-width: 992px)": {
-                  "margin-bottom": "20px"
-                }
-              },
-              ".mbr-section-title": {
-                "margin-bottom": "40px",
-                "@media (max-width: 992px)": {
-                  "margin-bottom": "20px"
-                }
-              },
-              ".text-wrapper": {
-                ".mbr-text": {
-                  "display": "inline-block",
-                  "width": "45%",
-                  "margin-bottom": "0",
-                  "@media (max-width: 1440px)": {
-                    "width": "50%"
-                  },
-                  "@media (max-width: 992px)": {
-                    "width": "100%"
-                  }
-                }
-              },
-              ".mbr-section-btn": {
-                "margin-top": "40px",
-                "@media (max-width: 992px)": {
-                  "margin-top": "20px"
-                }
-              }
-            },
-            ".mbr-label": {
-              "color": "#f1f5eb",
-              "text-align": "center"
-            },
-            ".mbr-section-title": {
-              "color": "#f1f5eb"
-            },
-            ".mbr-text, .text-wrapper": {
-              "color": "#f1f5eb",
-              "text-align": "center"
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "center"
-            }
-          },
-          "_name": "header02",
-          "_sourceTheme": "plantm5",
-          "_customHTML": "<section data-bs-version=\"5.1\"\n        class=\"header02 plantm5\"\n        group=\"Headers\"\n        data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\"\n        mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\"\n>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked/>\n        <input\n                type=\"range\"\n                inline\n                title=\"Top\"\n                name=\"paddingTop\"\n                min=\"0\"\n                max=\"16\"\n                step=\"1\"\n                value=\"16\"\n        />\n        <input\n                type=\"range\"\n                inline\n                title=\"Bottom\"\n                name=\"paddingBottom\"\n                min=\"0\"\n                max=\"16\"\n                step=\"1\"\n                value=\"16\"\n        />\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\" checked/>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked/>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked/>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked/>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax selected/>\n            <input type=\"color\" title=\"Color\" value=\"#f1f5eb\"/>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\"/>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input\n                type=\"image\"\n                title=\"Fallback Image\"\n                value=\"@PROJECT_PATH@/assets/images/background1.jpg\"\n                name=\"fallBackImage\"\n                condition=\"bg.type === 'video'\"\n        />\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked/>\n        <input\n                type=\"color\"\n                title=\"Overlay Color\"\n                name=\"overlayColor\"\n                value=\"#000000\"\n                condition=\"overlay && bg.type !== 'color'\"\n        />\n        <input\n                type=\"range\"\n                inline\n                title=\"Opacity\"\n                name=\"overlayOpacity\"\n                min=\"0\"\n                max=\"1\"\n                step=\"0.1\"\n                value=\"0.8\"\n                condition=\"overlay && bg.type !== 'color'\"\n        />\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div\n            class=\"mbr-overlay\"\n            mbr-if=\"overlay && bg.type !== 'color'\"\n            opacity=\"{{overlayOpacity}}\"\n            bg-color=\"{{overlayColor}}\"\n    ></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <p class=\"mbr-label mbr-fonts-style\" data-app-selector=\".mbr-label\"\n                       mbr-theme-style=\"display-4\" mbr-if=\"showLabel\">\n                        Thoughtful Design\n                    </p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\"\n                        data-app-selector=\".mbr-section-title, .mbr-section-btn\"\n                        mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Interior Designer\n                    </h2>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"\n                           data-app-selector=\".mbr-text, .text-wrapper\">\n                            Every space has a story—and I’m here to help you tell yours with style and intention. As an\n                            interior designer, I create personalized environments that balance beauty, comfort, and\n                            function.\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"\n                         data-toolbar=\"-mbrBtnMove\">\n                        <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                            <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\"></span>\n                            Get started\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "uSEsuBxDtj",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "header02-c4"
         }
       ]
     },
