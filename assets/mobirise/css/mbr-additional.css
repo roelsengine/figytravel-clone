@@ -1625,6 +1625,17 @@ a {
   font-weight: 400;
   font-style: normal;
 }
+#custom-html-db {
+  /* Type valid CSS here */
+}
+#custom-html-db div {
+  color: #777;
+  text-align: center;
+}
+#custom-html-db p {
+  font-size: 60px;
+  color: #777;
+}
 .cid-uSEswEmGyx {
   padding-top: 0rem;
   padding-bottom: 1rem;
