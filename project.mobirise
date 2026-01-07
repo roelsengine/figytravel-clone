@@ -1120,7 +1120,7 @@
             "slides__showBullets": true,
             "slides": [
               {
-                "image": "@PROJECT_PATH@/assets/images/mbr-1920x1278.jpg",
+                "image": "@PROJECT_PATH@/assets/images/volunteers-tanzania-cheeta-1920x1280.jpg",
                 "active": true,
                 "showButtons": true,
                 "showText": true,
@@ -1140,7 +1140,7 @@
                 "overlayOpacity": "0.1"
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/volunteers-tanzania-cheeta-1920x1280.jpg",
+                "image": "@PROJECT_PATH@/assets/images/mbr-1920x1278.jpg",
                 "active": false,
                 "showButtons": true,
                 "showText": true,
