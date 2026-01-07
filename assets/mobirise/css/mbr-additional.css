@@ -879,7 +879,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -922,7 +922,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -1246,8 +1246,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -1608,34 +1608,6 @@ a {
     font-size: 13px;
     padding: 8px 15px;
   }
-}
-#custom-html-db {
-  /* Type valid CSS here */
-}
-#custom-html-db div {
-  padding: 20ox;
-  color: #777;
-  text-align: center;
-}
-#custom-html-db p {
-  font-size: 60px;
-  color: #777;
-}
-#custom-html-c7 {
-  font-weight: 600;
-  line-height: 2;
-  color: #212529;
-  box-sizing: border-box;
-  margin: 0px;
-  margin-bottom: 0rem;
-  font-size: 1.25rem;
-  text-align: center!important;
-}
-#custom-html-c7 .lora {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 .cid-uSEswEmGyx {
   padding-top: 0rem;
@@ -2459,7 +2431,7 @@ a {
   background: #cc0000;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -2724,7 +2696,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -2767,7 +2739,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -3091,8 +3063,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -4094,7 +4066,7 @@ a {
   background: #cc0000;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -4359,7 +4331,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -4402,7 +4374,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uIxv1fMkZv .nav-item:focus,
@@ -4726,8 +4698,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -5624,7 +5596,7 @@ a {
   color: #000000;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -5889,7 +5861,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -5932,7 +5904,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uIxj3BlHjN .nav-item:focus,
@@ -6256,8 +6228,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -8010,7 +7982,7 @@ a {
   color: #777;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -8275,7 +8247,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -8318,7 +8290,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShqR3YPN7 .nav-item:focus,
@@ -8642,8 +8614,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -9540,7 +9512,7 @@ a {
   color: #000000;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -9805,7 +9777,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -9848,7 +9820,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShreOA9zm .nav-item:focus,
@@ -10172,8 +10144,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -10413,7 +10385,7 @@ a {
   color: #a1a1a1;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -10678,7 +10650,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -10721,7 +10693,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShrr8bAFH .nav-item:focus,
@@ -11045,8 +11017,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -11112,7 +11084,7 @@ a {
   }
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -11377,7 +11349,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -11420,7 +11392,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShrD2xo6F .nav-item:focus,
@@ -11744,8 +11716,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -12054,7 +12026,7 @@ a {
   color: #a6a99c;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -12319,7 +12291,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -12362,7 +12334,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShrSrxCRr .nav-item:focus,
@@ -12686,8 +12658,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -12753,7 +12725,7 @@ a {
   }
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -13018,7 +12990,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -13061,7 +13033,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uShsR89NGk .nav-item:focus,
@@ -13385,8 +13357,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -13452,7 +13424,7 @@ a {
   }
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -13717,7 +13689,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -13760,7 +13732,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -14084,8 +14056,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -14163,7 +14135,7 @@ a {
   color: #777;
 }
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -14428,7 +14400,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -14471,7 +14443,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uSNKDJejht .nav-item:focus,
@@ -14795,8 +14767,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -14962,7 +14934,7 @@ a {
   text-align: center;
 }
 .cid-uSNKDMyDR5 {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -15227,7 +15199,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -15270,7 +15242,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uTo2mloqfE .nav-item:focus,
@@ -15594,8 +15566,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -15762,7 +15734,7 @@ a {
   text-align: center;
 }
 .cid-uTo2mnxwvA {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
@@ -15896,6 +15868,29 @@ a {
 .cid-uTo2mnxwvA .list_main {
   color: #000000;
 }
+.cid-v7DcgKMjbm {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-v7DcgKMjbm .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v7DcgKMjbm .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-v7DcgKMjbm .mbr-section-title {
+  color: #232323;
+}
+.cid-v7DcgKMjbm .mbr-section-subtitle {
+  color: #a6a99c;
+}
 .cid-uGUkbNK72V {
   z-index: 1000;
   width: 100%;
@@ -16027,7 +16022,7 @@ a {
   height: 90px;
   padding: 0rem 0rem;
   flex-wrap: nowrap;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   left: 0;
   right: 0;
   -webkit-box-pack: justify;
@@ -16070,7 +16065,7 @@ a {
   transition: .3s all !important;
   min-width: auto;
   background: #000000;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 4px !important;
 }
 .cid-uGUkbNK72V .nav-item:focus,
@@ -16394,8 +16389,8 @@ a {
     border-radius: 1.5rem;
     background: #000000;
     opacity: 1;
-    border-color: rgba(0, 0, 0, 0.6) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(8px);
     border-radius: 4px !important;
   }
@@ -16460,8 +16455,352 @@ a {
     padding: 1rem;
   }
 }
+.cid-v7DhgSdYEP {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-v7DhgSdYEP .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v7DhgSdYEP .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-v7DhgSdYEP .content-wrap {
+  margin: 0 -20px;
+}
+.cid-v7DhgSdYEP .content-wrap .card {
+  padding: 0 20px;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .cid-v7DhgSdYEP .title-wrapper {
+    margin-bottom: 40px;
+  }
+}
+.cid-v7DhgSdYEP .title-wrapper .mbr-label {
+  margin-bottom: 12px;
+}
+.cid-v7DhgSdYEP .title-wrapper .mbr-section-title {
+  margin-bottom: 12px;
+}
+.cid-v7DhgSdYEP .title-wrapper .mbr-text {
+  margin-bottom: 0;
+}
+.cid-v7DhgSdYEP .title-wrapper .main-btn {
+  margin-top: 16px;
+}
+.cid-v7DhgSdYEP .title-wrapper .main-btn .btn {
+  margin-bottom: 0;
+}
+.cid-v7DhgSdYEP .title-wrapper .image-wrapper {
+  margin-top: 24px;
+}
+.cid-v7DhgSdYEP .title-wrapper .image-wrapper img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .cid-v7DhgSdYEP .title-wrapper .image-wrapper img {
+    height: 300px;
+  }
+}
+.cid-v7DhgSdYEP .items-wrapper .item {
+  margin-bottom: 40px;
+}
+.cid-v7DhgSdYEP .items-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+.cid-v7DhgSdYEP .items-wrapper .item .item-wrapper .item-number {
+  margin-bottom: 6px;
+}
+.cid-v7DhgSdYEP .items-wrapper .item .item-wrapper .item-title {
+  margin-bottom: 6px;
+}
+.cid-v7DhgSdYEP .items-wrapper .item .item-wrapper .item-text {
+  margin-bottom: 0;
+}
+.cid-v7DhgSdYEP .items-wrapper .item .item-wrapper .item-btn {
+  margin-top: 16px;
+}
+.cid-v7DhgSdYEP .items-wrapper .item .item-wrapper .item-btn .btn {
+  margin-bottom: 0;
+}
+.cid-v7DhgSdYEP .btn-wrapper {
+  margin-top: -2.5rem;
+}
+.cid-v7DhgSdYEP .mbr-label {
+  color: #232323;
+}
+.cid-v7DhgSdYEP .mbr-section-title {
+  color: #ffffff;
+}
+.cid-v7DhgSdYEP .mbr-text {
+  color: #ffffff;
+}
+.cid-v7DhgSdYEP .item-number {
+  color: #a8a8a8;
+}
+.cid-v7DhgSdYEP .item-title {
+  color: #ffffff;
+}
+.cid-v7DhgSdYEP .item-text {
+  color: #000000;
+}
+.cid-v7DhgSdYEP .mbr-section-title,
+.cid-v7DhgSdYEP .main-btn {
+  color: #000000;
+}
+.cid-v7DhVGnxZp {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  position: relative;
+}
+.cid-v7DhVGnxZp .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v7DhVGnxZp .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-v7DhVGnxZp::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dotted #e6e6e6;
+  pointer-events: none;
+}
+.cid-v7DhVGnxZp .content-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cid-v7DhVGnxZp .content-wrapper .border-wrap {
+  position: absolute;
+  height: 1000%;
+  width: 1px;
+  border-left: 1px dotted #e6e6e6;
+  pointer-events: none;
+}
+.cid-v7DhVGnxZp .content-wrapper .border_1 {
+  left: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .border_2 {
+  left: 25%;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .border_2 {
+    display: none;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .border_3 {
+  left: 50%;
+}
+.cid-v7DhVGnxZp .content-wrapper .border_4 {
+  left: 75%;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .border_4 {
+    display: none;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .border_5 {
+  left: 100%;
+}
+.cid-v7DhVGnxZp .content-wrapper .content-wrap {
+  margin: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrap {
+  align-items: flex-end;
+}
+.cid-v7DhVGnxZp .content-wrapper .card {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+  padding: 0 24px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .title-wrapper {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .title-wrapper {
+    padding: 0 16px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper {
+  margin-bottom: 24px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper {
+  display: inline-flex;
+  margin-right: 12px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor {
+  height: 10px;
+  background-color: #1a1a1a;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor_1 {
+  width: 33px;
+  margin-right: 16px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor_2 {
+  width: 17px;
+  margin-right: 8px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor_3 {
+  width: 9px;
+  margin-right: 4px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor_4 {
+  width: 4px;
+  margin-right: 2px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .decor-wrapper .decor_5 {
+  width: 2px;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .label-wrapper .label-wrap .mbr-label {
+  margin-bottom: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .title-wrapper .mbr-section-title {
+  margin-bottom: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .desc-wrapper {
+  padding: 0 24px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .desc-wrapper {
+    padding: 0 16px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .desc-wrapper .mbr-desc {
+  margin-bottom: 80px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .desc-wrapper .mbr-desc {
+    margin-bottom: 32px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item {
+  padding: 0;
+  margin-bottom: 80px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .item {
+    margin-bottom: 32px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border-top: 1px dotted #e6e6e6;
+  border-bottom: 1px dotted #e6e6e6;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .item .item-wrapper {
+    display: block;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .item-img {
+  position: relative;
+  height: 100%;
+  min-height: 145px;
+  margin-left: 1px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .item-img {
+    height: 300px;
+    min-height: auto;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .item-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .card-box {
+  padding: 24px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .card-box {
+    padding: 24px 16px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .card-box .item-title {
+  margin-bottom: 24px;
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .card-box .item-text {
+  margin-bottom: 0;
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .card-box .mbr-section-btn {
+  margin-top: 16px;
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .number-wrapper {
+  padding: 24px;
+}
+@media (max-width: 992px) {
+  .cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .number-wrapper {
+    padding: 0 16px 24px;
+  }
+}
+.cid-v7DhVGnxZp .content-wrapper .item .item-wrapper .number-wrapper .item-number {
+  margin-bottom: 0;
+}
+.cid-v7DhVGnxZp .mbr-label {
+  color: #1a1a1a;
+}
+.cid-v7DhVGnxZp .mbr-section-title {
+  color: #1a1a1a;
+}
+.cid-v7DhVGnxZp .mbr-desc {
+  color: #808080;
+}
+.cid-v7DhVGnxZp .item-title {
+  color: #1a1a1a;
+}
+.cid-v7DhVGnxZp .item-text {
+  color: #808080;
+}
+.cid-v7DhVGnxZp .item-number {
+  color: #1a1a1a;
+  text-align: right;
+}
 .cid-uSwVB0sAVw {
-  padding-top: 0rem;
+  padding-top: 10rem;
   padding-bottom: 0rem;
   background-image: url("../../../assets/images/stage-tanzania-footer.svg");
 }
