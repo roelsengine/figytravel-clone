@@ -1764,28 +1764,6 @@ a {
   background-color: #FF1493;
   color: #eee;
 }
-#custom-html-da .suggestion-tag {
-  background: #090909;
-  padding: 10px 20px 10px 20px;
-  border-radius: 15px;
-  font-size: 14px;
-  color: #FFF;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid #ddd;
-}
-#custom-html-da .suggestion-tag:hover {
-  background: #764ba2;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 600px) {
-  #custom-html-da .suggestion-tag {
-    font-size: 13px;
-    padding: 8px 15px;
-  }
-}
 .cid-v8i7NwCqsi {
   display: flex;
   padding-top: 0rem;
@@ -2024,29 +2002,6 @@ a {
   background-color: var(--mdb-light-bg-subtle);
   color: var(--mdb-light-text-emphasis);
 }
-.cid-uIbl0IEmT7 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-uIbl0IEmT7 .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uIbl0IEmT7 .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uIbl0IEmT7 .mbr-section-title {
-  color: #232323;
-}
-.cid-uIbl0IEmT7 .mbr-section-subtitle {
-  color: #232323;
-}
 .cid-uSgWLkxanh {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -2117,6 +2072,78 @@ a {
   text-align: left;
 }
 .cid-uSgWLkxanh .content-head {
+  max-width: 800px;
+}
+.cid-v8iiAzHKH7 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-v8iiAzHKH7 img,
+.cid-v8iiAzHKH7 .item-img {
+  width: 100%;
+  height: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cid-v8iiAzHKH7 .item:focus,
+.cid-v8iiAzHKH7 span:focus {
+  outline: none;
+}
+.cid-v8iiAzHKH7 .item {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-v8iiAzHKH7 .item {
+    margin-bottom: 1rem;
+  }
+}
+.cid-v8iiAzHKH7 .item-content {
+  margin-top: 2rem;
+  padding: 0 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-v8iiAzHKH7 .item-content {
+    padding: 2rem 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-v8iiAzHKH7 .item-content {
+    padding: 2rem 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
+.cid-v8iiAzHKH7 .item-wrapper {
+  position: relative;
+  background: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cid-v8iiAzHKH7 .item-wrapper .item-footer {
+  margin-top: auto;
+}
+.cid-v8iiAzHKH7 .mbr-section-title {
+  color: #000000;
+}
+.cid-v8iiAzHKH7 .item-title {
+  text-align: left;
+}
+.cid-v8iiAzHKH7 .item-subtitle {
+  text-align: left;
+  color: #919090;
+}
+.cid-v8iiAzHKH7 .mbr-text,
+.cid-v8iiAzHKH7 .item .mbr-section-btn {
+  text-align: left;
+}
+.cid-v8iiAzHKH7 .content-head {
   max-width: 800px;
 }
 .cid-v8idKUppaq {
@@ -2273,62 +2300,6 @@ a {
 }
 .cid-v8idKUppaq H3 {
   text-align: center;
-}
-.cid-v8ie3Gam2S {
-  padding-top: 2rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
-  font-weight: 600;
-  line-height: 3.5;
-  color: #212529;
-  box-sizing: border-box;
-  margin: 10px;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-  text-align: center!important;
-}
-.cid-v8ie3Gam2S .mbr-text {
-  color: #000000;
-}
-.cid-v8ie3Gam2S .mbr-section-subtitle {
-  color: #000000;
-}
-.cid-v8ie3Gam2S .mbr-section-title {
-  color: #000000;
-}
-.cid-v8ie3Gam2S .img-wrapper img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50% !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-v8ie3Gam2S .img-wrapper img {
-    width: 120px;
-    height: 120px;
-  }
-}
-@media (max-width: 768px) {
-  .cid-v8ie3Gam2S .img-wrapper img {
-    width: 80px;
-    height: 80px;
-  }
-}
-.cid-v8ie3Gam2S .img-wrapper {
-  display: flex;
-}
-.cid-v8ie3Gam2S .card-text {
-  text-align: center;
-}
-.cid-v8ie3Gam2S .card-title,
-.cid-v8ie3Gam2S .img-wrapper {
-  text-align: center;
-}
-.cid-v8ie3Gam2S .lora {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 .cid-uSgHEZ84qx {
   padding-top: 1rem;
