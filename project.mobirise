@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 491,
+    "uniqCompNum": 492,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -1200,8 +1200,90 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrap": {
+              "padding": "5rem 1rem",
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem"
+              }
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#000000"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#000000"
+            }
+          },
+          "_name": "header09",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header09 startm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\t\n    <mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"contentWidth\" title=\"Content Width\" min=\"4\" max=\"12\" step=\"1\" value=\"11\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n\t\t\t<option value=\"flex-start\">Top</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Bottom</option>\n\t\t</select>\n\t\t<select title=\"Horizontal Align\" name=\"horizontalAlign\">\n\t\t\t<option value=\"flex-start\">Left</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f92c50\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Welcome to Stage vrijwilligerswerk Tanzania</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n\t\t\t\t\tHeader Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tWij zijn FIGY Travel Foundation – een Nederlandse vrijwilligersreisorganisatie gevestigd in Amsterdam, opgericht om mensen de mogelijkheid te bieden om op vrijwillige basis te helpen in het onderwijs, de gezondheidszorg en de landbouw in de regio Mwanza, Tanzania. Daarbij zetten zij hun vaardigheden in en ervaren zij het leven in de lokale gemeenschap in een veilige omgeving.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n\t\t\t\t\t<a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tLearn more\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "v8i7NwCqsi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header09-dn"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -1223,65 +1305,19 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".content-wrapper": {
-              ".mbr-label": {
-                "margin-bottom": "80px",
-                "@media (max-width: 992px)": {
-                  "margin-bottom": "20px"
-                }
-              },
-              ".mbr-section-title": {
-                "margin-bottom": "40px",
-                "@media (max-width: 992px)": {
-                  "margin-bottom": "20px"
-                }
-              },
-              ".text-wrapper": {
-                ".mbr-text": {
-                  "display": "inline-block",
-                  "width": "45%",
-                  "margin-bottom": "0",
-                  "@media (max-width: 1440px)": {
-                    "width": "50%"
-                  },
-                  "@media (max-width: 992px)": {
-                    "width": "100%"
-                  }
-                }
-              },
-              ".mbr-section-btn": {
-                "margin-top": "40px",
-                "@media (max-width: 992px)": {
-                  "margin-top": "20px"
-                }
-              }
-            },
-            ".mbr-label": {
-              "color": "#f1f5eb",
-              "text-align": "center"
-            },
             ".mbr-section-title": {
-              "color": "#f1f5eb",
-              "line-heigth": "12pt "
+              "color": "#232323"
             },
-            ".mbr-text, .text-wrapper": {
-              "color": "#000000",
-              "text-align": "center",
-              "line-heigth": "12pt "
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "center",
-              "color": "#232323",
-              "line-heigth": "12pt "
+            ".mbr-section-subtitle": {
+              "color": "#232323"
             }
           },
-          "_name": "header02",
-          "_sourceTheme": "plantm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header02 plantm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"16\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"16\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/plantm5/components/_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/plantm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <p class=\"mbr-label mbr-fonts-style\" data-app-selector=\".mbr-label\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\">\n                        Thoughtful Design\n                    </p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>\n                        Welcome to Stage/internship Tanzania</b></h2>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">\n                            We are FIGY Travel Foundation - a Dutch volunteer travel organization based in Amsterdam and established to provide people with the opportunity to assist on a <b>voluntary basis in teaching, healthcare and agriculture</b> in the area of Mwanza, Tanzania, while <b>using their skills and experiencing life in the local community in a safe environment.\n                        </b></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-warning\" href=\"page4.html\" data-app-placeholder=\"Type Text\">Learn more about us</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "uSEswEmGyx",
-          "_anchor": "header02-c5",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_name": "article11",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Why volunteer with us</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Create real, lasting change by volunteering or interning with us in the Netherlands or Tanzania. Your help truly matters!<div><div>\n</div></div></h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"page4.html\" data-app-placeholder=\"Type Text\">\n                        Learn more about us</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "article11-3k",
+          "_isUserblock": true,
+          "_cid": "uIbl0IEmT7",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1397,52 +1433,6 @@
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing02\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <select title=\"Columns\" name=\"cardsWidth\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\">3</option>\n      <option value=\"3\" selected>4</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\">\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <input type=\"checkbox\" name=\"showmainButtons\" title=\"Buttons\">\n    <header>Cards</header>\n    <input type=\"checkbox\" name=\"autoSize\" title=\"Auto Size\" checked>\n    <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"autoSize && !(showButtons==false && showCardSubtitle==false && showCardTitle==false && showText==false)\">\n    <input type=\"checkbox\" title=\"Spacing\" name=\"spacing\" checked>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Price\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle || showmainButton\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Our internship and volunteer programs</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-head .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n          <div class=\"mbr-section-btn align-center item-footer mb-0 mt-4\" mbr-if=\"showmainButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Get Started</a></div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" alt=\"Stage Tanzania\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Health Medical</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Gain hands-on experience in healthcare while making a difference in underserved communities. Help dispensaries and learn from each other’s skills. Visit patients at home in the rural area and help them treat their wounds and injuries. Try to make adifference at one of the nearby hospitals and/or help disabled children at schools.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div><div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/mbr-703x469.jpeg\" alt=\"Stage Tanzania\" data-slide-to=\"1\" data-bs-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Education teach</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Experience the beauty of Mwanza, Tanzania while making a positive impact teaching children. Help teachers setup a program for subjects and learn from each other’s skills. Be creative and organize small school events like games and sports. Make music, sing and dance with the young ones or have discussions with debating groups at schools. \n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/tanzania-travel-lodge-agriculture.webp\" alt=\"Mobirise Website Builder\" data-slide-to=\"2\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Agriculture farming</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Discover rural life and contribute to local farming communities as an agriculture volunteer. Teach smallhorders how to be more efficient growing crops or keeping livestock. Help schools by setting up an agricultural plan to gain income and provide meals to the students. Discuss the positive outcome of well kept land with small groups.\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-img\">\n            <img src=\"@PROJECT_PATH@/assets/images/volunteers-tanzania-campfire-259x194.jpg\" alt=\"Stage Tanzania\" data-bs-slide-to=\"3\" data-slide-to=\"3\">\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <h5 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Volunteers gap year</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">€ 1.974 (indicative) For 6 weeks</h6>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .item .mbr-section-btn\">\n              Sylvian vragen<br>\n            </p>\n            <div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-warning\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
           "_cid": "uSgWLkxanh",
           "_anchor": "pricing02-9m",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#232323"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#232323"
-            }
-          },
-          "_name": "article11",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article11\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n       <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">        \n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\">\n    </div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-0 mb-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Why volunteer with us</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mt-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Create real, lasting change by volunteering or interning with us in the Netherlands or Tanzania. Your help truly matters!<div><div>\n</div></div></h4>\n                <div class=\"mbr-section-btn align-center mt-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"page4.html\" data-app-placeholder=\"Type Text\">\n                        Learn more about us</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "article11-3k",
-          "_isUserblock": true,
-          "_cid": "uIbl0IEmT7",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
