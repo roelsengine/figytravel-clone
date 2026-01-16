@@ -1152,11 +1152,11 @@
                 "customStyle3": "display-4",
                 "alt": "",
                 "title": "",
-                "textTitle": "<b>Tanzania Stage en vrijwillegers</b>",
+                "textTitle": "<b>Tanzania Stage en vrijwilligers</b>",
                 "overlay": true,
                 "contentAlign": "left",
-                "text": "<i>Work as a volunteer or an intern in tanzania mwanza</i>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">Volunteer Agriculture&nbsp;</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"page3.html\" data-toolbar=\"-mbrBtnMove\">Volunteer Teaching Education</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Volunteer Healthcare</a> ",
+                "text": "<i>Werk als een stagiar of vrijwilliger in Tanzania mwanza</i>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">Stage Landbouw</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"page3.html\" data-toolbar=\"-mbrBtnMove\">Stage Onderwijs</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Stage Gezondheidszorg</a> ",
                 "overlayOpacity": "0.2"
               },
               {
@@ -1363,7 +1363,7 @@
           },
           "_name": "article11",
           "_sourceTheme": "startm5",
-          "_customHTML": "<p class=\"note note-light center\">\n      <strong>Note:</strong> Google reviews <strong>4,7 van de 5 sterren</strong> Tripadvisor reviews <strong>5 van de 5 sterren</strong>stagaires and vrijwillegers <strong>4,8 van de 5 sterren</strong></p>",
+          "_customHTML": "<p class=\"note note-light center\">\n      <strong>Note:</strong> Google reviews <strong><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star-half-empty\" aria-hidden=\"true\"></i>4,7</strong> Tripadvisor reviews <strong><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i>5 </strong>stagaires and vrijwilligers <strong><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star\" aria-hidden=\"true\"></i><i class=\"fa fa-star-half-empty\" aria-hidden=\"true\"></i>4,8 </strong></p>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_anchor": "article11-do",
