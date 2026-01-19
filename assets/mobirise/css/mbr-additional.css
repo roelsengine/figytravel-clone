@@ -6694,6 +6694,51 @@ a {
 .cid-uJXmN0Ds3H .mbr-section-btn {
   color: #232323;
 }
+.cid-uKpj6EvDRf {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-uKpj6EvDRf .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uKpj6EvDRf .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uKpj6EvDRf .row {
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  .cid-uKpj6EvDRf .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uKpj6EvDRf .row {
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .cid-uKpj6EvDRf .image-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uKpj6EvDRf .text-wrapper {
+    padding: 0 2rem;
+  }
+}
+.cid-uKpj6EvDRf .mbr-section-title {
+  color: #000000;
+}
+.cid-uKpj6EvDRf .mbr-text,
+.cid-uKpj6EvDRf .mbr-section-btn {
+  color: #000000;
+}
 .cid-uKp5Mth17Z {
   padding-top: 1rem;
   padding-bottom: 0rem;
@@ -6710,9 +6755,6 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-}
-.cid-uKp5Mth17Z .row {
-  flex-direction: row-reverse;
 }
 @media (max-width: 991px) {
   .cid-uKp5Mth17Z .image-wrapper {
@@ -6873,48 +6915,6 @@ a {
 }
 #custom-html-6m ul {
   align: center;
-}
-.cid-uKpj6EvDRf {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #ffffff;
-}
-.cid-uKpj6EvDRf .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uKpj6EvDRf .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 991px) {
-  .cid-uKpj6EvDRf .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-uKpj6EvDRf .row {
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .cid-uKpj6EvDRf .image-wrapper {
-    padding: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-uKpj6EvDRf .text-wrapper {
-    padding: 0 2rem;
-  }
-}
-.cid-uKpj6EvDRf .mbr-section-title {
-  color: #000000;
-}
-.cid-uKpj6EvDRf .mbr-text,
-.cid-uKpj6EvDRf .mbr-section-btn {
-  color: #000000;
 }
 #custom-html-6r {
   /* Type valid CSS here */
